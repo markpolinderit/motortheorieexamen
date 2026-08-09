@@ -466,14 +466,14 @@
    "categorie": "kennis",
    "onderwerp": "Borden",
    "vraag": "Wat betekent dit bord?",
-   "afbeelding": "img/J3.svg",
+   "afbeelding": "img/J2.svg",
    "opties": [
     "Gevaarlijke bocht naar rechts",
     "Verplicht rechtsaf",
     "Rijstrook naar rechts verlegd"
    ],
    "antwoord": 0,
-   "uitleg": "Bord J3 is een waarschuwingsbord voor een gevaarlijke bocht naar rechts. Pas je snelheid aan vóór de bocht."
+   "uitleg": "Bord J2 is een waarschuwingsbord voor een gevaarlijke bocht naar rechts. Pas je snelheid aan vóór de bocht."
   },
   {
    "id": "k15",
