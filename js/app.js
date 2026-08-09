@@ -125,7 +125,7 @@
       'Doe een volledige examensimulatie of oefen gericht per onderwerp.</p>' +
       '<div class="grid">' +
         tile('#/examen', '⏱️', 'Examensimulatie',
-             ex.aantalVragen + ' vragen in ' + ex.tijdMinuten + ' minuten. Je slaagt vanaf ' + ex.slaagnorm + ' goede antwoorden.') +
+             ex.aantalVragen + ' vragen in ' + ex.tijdMinuten + ' minuten, of een los examen per onderdeel.') +
         tile('#/oefenen', '📚', 'Oefenen per onderwerp',
              'Vraag voor vraag oefenen met direct antwoord en uitleg.') +
         tile('#/voortgang', '📈', 'Mijn voortgang',
@@ -270,9 +270,16 @@
     stopTimer();
     session = null;
     var ex = DATA.examen;
+
+    var deel = (DATA.deelexamens || []).map(function (d, i) {
+      return '<div class="tile"><h3>' + (CAT_LABEL[d.categorie] || d.categorie) + '</h3>' +
+        '<p>' + d.aantalVragen + ' vragen · ' + d.tijdMinuten + ' min · geslaagd vanaf ' + d.slaagnorm + '</p>' +
+        '<div class="btnrow"><button class="btn" data-deel="' + i + '">Start</button></div></div>';
+    }).join('');
+
     app.innerHTML =
       '<h1>Examensimulatie</h1>' +
-      '<p class="lead">Zelfde opzet als het CBR-examen motor.</p>' +
+      '<p class="lead">Zelfde opzet als het CBR-examen motor: alle onderdelen door elkaar.</p>' +
       '<div class="card">' +
         '<table><tbody>' +
           '<tr><th>Aantal vragen</th><td>' + ex.aantalVragen + '</td></tr>' +
@@ -284,26 +291,53 @@
         '</tbody></table>' +
         '<p class="small muted" style="margin-bottom:0">Je kunt vragen markeren en later terugkomen. De uitslag met uitleg krijg je pas na het inleveren.</p>' +
       '</div>' +
-      '<div class="btnrow"><button class="btn primary" id="start">Start het examen</button></div>';
-    document.getElementById('start').onclick = startExamen;
+      '<div class="btnrow"><button class="btn primary" id="start">Start het volledige examen</button></div>' +
+      (deel
+        ? '<h2>Examen per onderdeel</h2>' +
+          '<p class="lead small">Één onderdeel onder examenomstandigheden, met eigen tijd en slaagnorm.</p>' +
+          '<div class="grid">' + deel + '</div>'
+        : '');
+
+    document.getElementById('start').onclick = function () { startExamen(null); };
+    app.querySelectorAll('[data-deel]').forEach(function (b) {
+      b.onclick = function () { startExamen(DATA.deelexamens[parseInt(b.dataset.deel, 10)]); };
+    });
   }
 
-  function startExamen() {
-    var ex = DATA.examen, gekozen = [];
-    Object.keys(ex.verdeling).forEach(function (cat) {
-      gekozen = gekozen.concat(shuffle(byCat(cat)).slice(0, ex.verdeling[cat]));
-    });
-    // aanvullen als een categorie te weinig vragen heeft
-    if (gekozen.length < ex.aantalVragen) {
-      var rest = DATA.vragen.filter(function (q) { return gekozen.indexOf(q) < 0; });
-      gekozen = gekozen.concat(shuffle(rest).slice(0, ex.aantalVragen - gekozen.length));
+  /* cfg = null voor het volledige examen, anders een deelexamen uit DATA.deelexamens */
+  function startExamen(cfg) {
+    var gekozen = [], aantal, minuten, norm, titel;
+
+    if (cfg) {
+      aantal = Math.min(cfg.aantalVragen, byCat(cfg.categorie).length);
+      minuten = cfg.tijdMinuten;
+      norm = Math.min(cfg.slaagnorm, aantal);
+      titel = 'Deelexamen ' + (CAT_LABEL[cfg.categorie] || cfg.categorie).toLowerCase();
+      gekozen = shuffle(byCat(cfg.categorie)).slice(0, aantal);
+    } else {
+      var ex = DATA.examen;
+      aantal = ex.aantalVragen; minuten = ex.tijdMinuten; norm = ex.slaagnorm;
+      titel = 'Volledig examen';
+      Object.keys(ex.verdeling).forEach(function (cat) {
+        gekozen = gekozen.concat(shuffle(byCat(cat)).slice(0, ex.verdeling[cat]));
+      });
+      // aanvullen als een categorie te weinig vragen heeft
+      if (gekozen.length < aantal) {
+        var rest = DATA.vragen.filter(function (q) { return gekozen.indexOf(q) < 0; });
+        gekozen = gekozen.concat(shuffle(rest).slice(0, aantal - gekozen.length));
+      }
+      gekozen = gekozen.slice(0, aantal);
     }
+
     session = {
       type: 'examen',
-      vragen: shuffle(gekozen).slice(0, ex.aantalVragen).map(prepare),
+      titel: titel,
+      norm: norm,
+      cfg: cfg || null,
+      vragen: shuffle(gekozen).map(prepare),
       i: 0,
       klaar: false,
-      resterend: ex.tijdMinuten * 60
+      resterend: minuten * 60
     };
     startTimer();
     location.hash = '#/examen/bezig';
@@ -330,8 +364,8 @@
 
     app.innerHTML =
       '<div class="quizbar">' +
-        '<div class="muted small">Vraag ' + (s.i + 1) + ' / ' + s.vragen.length +
-        ' · ' + beantwoord + ' beantwoord</div>' +
+        '<div class="muted small"><span class="tag">' + esc(s.titel) + '</span> ' +
+        'Vraag ' + (s.i + 1) + ' / ' + s.vragen.length + ' · ' + beantwoord + ' beantwoord</div>' +
         '<div><span class="timer" id="timer">' + fmtTime(Math.max(0, s.resterend)) + '</span></div>' +
       '</div>' +
       '<div class="progress"><i style="width:' + Math.round((beantwoord / s.vragen.length) * 100) + '%"></i></div>' +
@@ -408,9 +442,10 @@
       if (good) { s.goed++; c.goed++; }
       if (q.keuze !== null) noteAnswer(q.id, good); else noteAnswer(q.id, false);
     });
-    s.geslaagd = s.goed >= DATA.examen.slaagnorm;
+    s.geslaagd = s.goed >= s.norm;
     progress.examens.push({
-      datum: Date.now(), score: s.goed, totaal: s.vragen.length, geslaagd: s.geslaagd
+      datum: Date.now(), score: s.goed, totaal: s.vragen.length,
+      geslaagd: s.geslaagd, soort: s.titel || 'Examen'
     });
     save(progress);
     renderExamenResultaat();
@@ -439,23 +474,24 @@
       : '<p class="muted">Je had alles goed. Netjes.</p>';
 
     app.innerHTML =
+      '<span class="tag">' + esc(s.titel || 'Examen') + '</span>' +
       '<h1>Uitslag</h1>' +
       (s.tijdOp ? '<p class="lead">De tijd was op — het examen is automatisch ingeleverd.</p>' : '') +
       '<div class="card score">' +
         '<div class="ring" style="--p:' + pct + '" data-label="' + s.goed + '/' + s.vragen.length + '"></div>' +
         '<div>' +
           '<div class="verdict ' + (s.geslaagd ? 'pass' : 'fail') + '">' + (s.geslaagd ? 'Geslaagd 🎉' : 'Gezakt') + '</div>' +
-          '<p class="muted">Je hebt ' + DATA.examen.slaagnorm + ' van de ' + s.vragen.length + ' goede antwoorden nodig.</p>' +
+          '<p class="muted">Je hebt ' + s.norm + ' van de ' + s.vragen.length + ' goede antwoorden nodig.</p>' +
         '</div>' +
       '</div>' +
       '<div class="card"><h2 style="margin-top:0">Per onderdeel</h2><table><tbody>' + catRows + '</tbody></table></div>' +
       '<div class="card"><h2 style="margin-top:0">Fout beantwoord (' + fouten.length + ')</h2>' + reviewHTML + '</div>' +
       '<div class="btnrow">' +
-        '<button class="btn primary" id="opnieuw">Nieuw examen</button>' +
+        '<button class="btn primary" id="opnieuw">Opnieuw</button>' +
         '<a class="btn" href="#/oefenen/fouten">Foute vragen oefenen</a>' +
-        '<a class="btn ghost" href="#/">Naar start</a>' +
+        '<a class="btn ghost" href="#/examen">Ander examen kiezen</a>' +
       '</div>';
-    document.getElementById('opnieuw').onclick = startExamen;
+    document.getElementById('opnieuw').onclick = function () { startExamen(s.cfg); };
   }
 
   /* ----- voortgang ----- */
@@ -480,6 +516,7 @@
 
     var exRows = progress.examens.slice().reverse().slice(0, 10).map(function (e) {
       return '<tr><td>' + new Date(e.datum).toLocaleString('nl-NL', { dateStyle: 'short', timeStyle: 'short' }) + '</td>' +
+        '<td class="small">' + esc(e.soort || 'Examen') + '</td>' +
         '<td>' + e.score + '/' + e.totaal + '</td>' +
         '<td class="' + (e.geslaagd ? 'verdict pass' : 'verdict fail') + '" style="font-size:.9rem">' +
         (e.geslaagd ? 'geslaagd' : 'gezakt') + '</td></tr>';
@@ -498,7 +535,7 @@
       (fout ? '<div class="btnrow"><a class="btn primary" href="#/oefenen/fouten">Oefen je ' + fout + ' foute vragen</a></div>' : '') +
       (progress.examens.length
         ? '<div class="card"><h2 style="margin-top:0">Examengeschiedenis</h2><table>' +
-          '<thead><tr><th>Datum</th><th>Score</th><th>Uitslag</th></tr></thead><tbody>' + exRows + '</tbody></table></div>'
+          '<thead><tr><th>Datum</th><th>Examen</th><th>Score</th><th>Uitslag</th></tr></thead><tbody>' + exRows + '</tbody></table></div>'
         : '') +
       '<div class="btnrow"><button class="btn ghost" id="wis">Voortgang wissen</button></div>';
 

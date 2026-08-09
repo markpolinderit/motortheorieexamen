@@ -1,693 +1,2091 @@
 {
-  "versie": 1,
-  "bijgewerkt": "2026-08-09",
-  "examen": {
-    "aantalVragen": 50,
-    "tijdMinuten": 30,
-    "slaagnorm": 41,
-    "verdeling": { "gevaarherkenning": 15, "kennis": 18, "inzicht": 17 }
+ "versie": 2,
+ "bijgewerkt": "2026-08-09",
+ "examen": {
+  "aantalVragen": 50,
+  "tijdMinuten": 30,
+  "slaagnorm": 41,
+  "verdeling": {
+   "gevaarherkenning": 15,
+   "kennis": 18,
+   "inzicht": 17
+  }
+ },
+ "vragen": [
+  {
+   "id": "g01",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "Je rijdt 50 km/u langs een rij geparkeerde auto's. Bij een auto rechts gaat het portier open. Wat doe je?",
+   "afbeelding": "img/pov-portier.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een openslaand portier komt zo je pad in en er kan iemand uitstappen. Remmen en zoveel mogelijk afstand houden van geparkeerde auto's."
   },
-  "vragen": [
-    {
-      "id": "g01",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Bebouwde kom",
-      "vraag": "Je rijdt 50 km/u binnen de bebouwde kom. Rechts stapt een voetganger tussen twee geparkeerde auto's vandaan de rijbaan op. Wat doe je?",
-      "afbeelding": "img/scene-voetganger-tussen-autos.svg",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "De voetganger staat al op de rijbaan en jij nadert met 50 km/u. Dit is een direct gevaar: je moet remmen om een aanrijding te voorkomen."
-    },
-    {
-      "id": "g02",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Snelweg",
-      "vraag": "Je nadert op de autosnelweg een stilstaande file terwijl je zelf nog 100 km/u rijdt. Wat doe je?",
-      "afbeelding": "img/scene-file-snelweg.svg",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Bij een stilstaande file moet je flink snelheid minderen. Zet daarnaast je alarmlichten aan om het verkeer achter je te waarschuwen."
-    },
-    {
-      "id": "g03",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Voorrang",
-      "vraag": "Je rijdt 80 km/u op een voorrangsweg. Ver voor je staat een auto stil bij de haaientanden van een zijweg. De bestuurder kijkt jouw kant op. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Er is nog geen direct gevaar, maar de situatie kan veranderen als hij toch optrekt. Gas loslaten geeft je remklaarheid zonder onnodig hard te remmen."
-    },
-    {
-      "id": "g04",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Bebouwde kom",
-      "vraag": "Je rijdt 30 km/u binnen de bebouwde kom. Voor je rijdt een fietser rustig en stabiel rechtdoor op het fietspad, ruim naast de rijbaan. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 2,
-      "uitleg": "De fietser rijdt op een eigen fietspad, stabiel en voorspelbaar. Er is geen aanleiding om snelheid te minderen."
-    },
-    {
-      "id": "g05",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Afslaan",
-      "vraag": "Je wilt rechtsaf slaan. Rechts naast je rijdt een fietser die rechtdoor gaat. Wat doe je?",
-      "afbeelding": "img/scene-fietser-rechts.svg",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Je moet de rechtdoorgaande fietser voor laten gaan. Remmen en hem laten passeren voorkomt een klassieke afslagbotsing."
-    },
-    {
-      "id": "g06",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Bebouwde kom",
-      "vraag": "In een woonstraat rolt vlak voor je een bal tussen geparkeerde auto's de rijbaan op. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Achter een bal komt vaak een kind. Direct remmen is hier de enige juiste reactie."
-    },
-    {
-      "id": "g07",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Voorrang",
-      "vraag": "Je nadert een gelijkwaardig kruispunt. Van rechts komt een auto die zijn snelheid niet mindert. Wat doe je?",
-      "afbeelding": "img/scene-kruispunt-rechts.svg",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Op een gelijkwaardig kruispunt heeft verkeer van rechts voorrang. Bovendien mindert hij geen snelheid: remmen dus."
-    },
-    {
-      "id": "g08",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Bebouwde kom",
-      "vraag": "Binnen de bebouwde kom staat een lijnbus bij een halte. De bus zet zijn richtingaanwijzer naar links aan. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Binnen de bebouwde kom moet je een bus die vanaf een halte wegrijdt voor laten gaan. Gas loslaten en de bus ruimte geven."
-    },
-    {
-      "id": "g09",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Motorspecifiek",
-      "vraag": "Je nadert een bocht met tramrails op een nat wegdek. Wat doe je?",
-      "afbeelding": "img/scene-tram-bocht.svg",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Natte rails zijn spekglad voor een motor. Minder snelheid vóór de bocht en kruis de rails zo haaks mogelijk zonder in de bocht te remmen."
-    },
-    {
-      "id": "g10",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Motorspecifiek",
-      "vraag": "Je rijdt vlak achter een vrachtwagen, precies in zijn dode hoek. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "In de dode hoek ziet de chauffeur je niet en heb je zelf geen zicht vooruit. Laat gas los en val terug tot je zijn spiegels weer ziet."
-    },
-    {
-      "id": "g11",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Snelweg",
-      "vraag": "Je rijdt 100 km/u op de rechterrijstrook van de autosnelweg. Rechts voegt een auto met duidelijk lagere snelheid in. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Je moet invoegend verkeer de kans geven. Gas loslaten en zo nodig naar links uitwijken als dat veilig kan."
-    },
-    {
-      "id": "g12",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Verkeerslichten",
-      "vraag": "Je nadert een kruispunt met groen licht. Je hebt vrij zicht en er is geen kruisend of afslaand verkeer. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 2,
-      "uitleg": "Groen licht, vrij zicht en geen conflicterend verkeer: er is geen reden om je snelheid aan te passen."
-    },
-    {
-      "id": "g13",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Volgafstand",
-      "vraag": "Op een dalende weg gaan bij de auto voor je plotseling de remlichten aan. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Bergaf is je remweg langer. Remlichten voor je betekenen: direct zelf remmen."
-    },
-    {
-      "id": "g14",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Kwetsbare verkeersdeelnemers",
-      "vraag": "Voor je rijdt een fietser met volle tassen aan het stuur die duidelijk zwalkt. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Een zwalkende fietser is onvoorspelbaar. Neem gas terug, houd afstand en haal pas in als je ruim voorbij kunt."
-    },
-    {
-      "id": "g15",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Kwetsbare verkeersdeelnemers",
-      "vraag": "Je rijdt langs een school. Op de stoep staan kinderen; één kind kijkt naar de overkant. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Kinderen zijn onvoorspelbaar en dit kind lijkt te willen oversteken. Gas loslaten en remklaar zijn."
-    },
-    {
-      "id": "g16",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Buiten bebouwde kom",
-      "vraag": "Je rijdt 80 km/u buiten de bebouwde kom. Een tegenligger staat stil met zijn richtingaanwijzer naar links om een oprit in te draaien. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 1,
-      "uitleg": "Hij moet jou voor laten gaan, maar motorrijders worden vaak over het hoofd gezien. Gas loslaten en remklaar zijn."
-    },
-    {
-      "id": "g17",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Uitrit",
-      "vraag": "Vlak voor je rijdt een auto achteruit een uitrit uit de rijbaan op. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "De auto komt al de rijbaan op en de bestuurder heeft achteruit slecht zicht. Remmen."
-    },
-    {
-      "id": "g18",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Snelweg",
-      "vraag": "Je rijdt op de rechterrijstrook van de snelweg. Een auto van de linkerrijstrook schiet vlak voor je naar rechts. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Je volgafstand is in één klap weg. Remmen om je afstand te herstellen."
-    },
-    {
-      "id": "g19",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Erf",
-      "vraag": "Je rijdt stapvoets over een erf. Bij een geparkeerde auto branden de achteruitrijlichten. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 0,
-      "uitleg": "Achteruitrijlichten betekenen dat de auto zo de weg op komt. Remmen en hem voor laten gaan."
-    },
-    {
-      "id": "g20",
-      "categorie": "gevaarherkenning",
-      "onderwerp": "Buiten bebouwde kom",
-      "vraag": "Je rijdt 80 km/u op een rechte, overzichtelijke weg. Droog wegdek, goed zicht, geen ander verkeer. Wat doe je?",
-      "opties": ["Remmen", "Gas loslaten", "Niets doen"],
-      "antwoord": 2,
-      "uitleg": "Er is geen enkel gevaar zichtbaar en je rijdt niet te hard. Je hoeft niets te doen."
-    },
-
-    {
-      "id": "k01",
-      "categorie": "kennis",
-      "onderwerp": "Motorspecifiek",
-      "vraag": "Wat is wettelijk verplicht als je op een motorfiets rijdt?",
-      "opties": [
-        "Een goedgekeurde helm",
-        "Een goedgekeurde helm, motorhandschoenen en motorlaarzen",
-        "Alleen beschermende kleding, een helm is een advies"
-      ],
-      "antwoord": 0,
-      "uitleg": "Alleen een goedgekeurde helm is wettelijk verplicht, voor bestuurder én passagier. Handschoenen, jas en laarzen zijn sterk aan te raden maar niet verplicht."
-    },
-    {
-      "id": "k02",
-      "categorie": "kennis",
-      "onderwerp": "Voertuig en documenten",
-      "vraag": "Is een motorfiets in Nederland APK-plichtig?",
-      "opties": ["Nee", "Ja, elke twee jaar", "Ja, elk jaar"],
-      "antwoord": 0,
-      "uitleg": "Motorfietsen zijn in Nederland niet APK-plichtig. Je blijft wel zelf verantwoordelijk voor de technische staat van je motor."
-    },
-    {
-      "id": "k03",
-      "categorie": "kennis",
-      "onderwerp": "Verlichting",
-      "vraag": "Moet je overdag met dimlicht rijden op een motorfiets?",
-      "opties": [
-        "Ja, dat is verplicht",
-        "Nee, alleen bij slecht zicht",
-        "Nee, alleen buiten de bebouwde kom"
-      ],
-      "antwoord": 0,
-      "uitleg": "Motorfietsen moeten ook overdag dimlicht voeren. Dat maakt je een stuk beter zichtbaar voor ander verkeer."
-    },
-    {
-      "id": "k04",
-      "categorie": "kennis",
-      "onderwerp": "Rijbewijs",
-      "vraag": "Wat is het maximale motorvermogen voor rijbewijs A2?",
-      "opties": ["35 kW", "11 kW", "70 kW"],
-      "antwoord": 0,
-      "uitleg": "Met A2 mag je op een motor van maximaal 35 kW rijden, met een vermogen/gewichtsverhouding van maximaal 0,2 kW/kg."
-    },
-    {
-      "id": "k05",
-      "categorie": "kennis",
-      "onderwerp": "Rijbewijs",
-      "vraag": "Vanaf welke leeftijd mag je het rijbewijs A1 halen?",
-      "opties": ["18 jaar", "16 jaar", "20 jaar"],
-      "antwoord": 0,
-      "uitleg": "A1 (lichte motor tot 125 cc en 11 kW) mag vanaf 18 jaar, A2 vanaf 20 jaar en de onbeperkte A vanaf 24 jaar (of vanaf 20 jaar na twee jaar A2)."
-    },
-    {
-      "id": "k06",
-      "categorie": "kennis",
-      "onderwerp": "Alcohol",
-      "vraag": "Je hebt je rijbewijs korter dan vijf jaar. Wat is het maximale alcoholpromillage voor jou?",
-      "opties": ["0,2 promille", "0,5 promille", "0,8 promille"],
-      "antwoord": 0,
-      "uitleg": "Voor beginnende bestuurders geldt 0,2 promille. Voor ervaren bestuurders is de grens 0,5 promille."
-    },
-    {
-      "id": "k07",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-b6.svg",
-      "opties": [
-        "Verleen voorrang aan bestuurders op de kruisende weg",
-        "Je bent voorrangsweg opgereden",
-        "Stoppen is verplicht"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bord B6: verleen voorrang aan bestuurders op de kruisende weg. Je hoeft niet te stoppen, wel voorrang te verlenen."
-    },
-    {
-      "id": "k08",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-b1.svg",
-      "opties": [
-        "Je rijdt op een voorrangsweg",
-        "Einde voorrangsweg",
-        "Voorrangskruispunt, zijweg links"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bord B1: voorrangsweg. Verkeer op de zijwegen moet jou voorrang verlenen."
-    },
-    {
-      "id": "k09",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-c11.svg",
-      "opties": [
-        "Gesloten voor motorfietsen",
-        "Gesloten voor bromfietsen",
-        "Parkeerverbod voor motorfietsen"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bord C11: gesloten voor motorfietsen. Je mag deze weg met je motor niet in."
-    },
-    {
-      "id": "k10",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-f1.svg",
-      "opties": [
-        "Verbod voor bestuurders om elkaar in te halen",
-        "Verbod voor vrachtauto's om in te halen",
-        "Einde inhaalverbod"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bord F1: verbod voor motorvoertuigen om elkaar onderling in te halen. Een fietser of bromfietser mag je wel inhalen."
-    },
-    {
-      "id": "k11",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-d1.svg",
-      "opties": [
-        "Rotonde, verplichte rijrichting",
-        "Rotonde met voorrang voor het verkeer op de rotonde",
-        "Keerverbod"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bord D1 geeft de verplichte rijrichting op een rotonde aan. Wie voorrang heeft, lees je af aan de haaientanden of borden bij de toegang."
-    },
-    {
-      "id": "k12",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Je rijdt dit bord voorbij. Welke maximumsnelheid geldt er nu?",
-      "afbeelding": "img/bord-g5.svg",
-      "opties": ["15 km/u", "30 km/u", "50 km/u"],
-      "antwoord": 0,
-      "uitleg": "Bord G5 geeft een erf aan. Daar mag je maximaal 15 km/u rijden en parkeer je alleen in de daarvoor bestemde vakken."
-    },
-    {
-      "id": "k13",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-l2.svg",
-      "opties": ["Doodlopende weg", "Eenrichtingsweg", "Verboden in te rijden"],
-      "antwoord": 0,
-      "uitleg": "Bord L2: doodlopende weg. Je mag de weg wel inrijden, maar je kunt er niet doorheen."
-    },
-    {
-      "id": "k14",
-      "categorie": "kennis",
-      "onderwerp": "Borden",
-      "vraag": "Wat betekent dit bord?",
-      "afbeelding": "img/bord-j1.svg",
-      "opties": [
-        "Gevaarlijke bocht naar rechts",
-        "Verplicht rechtsaf",
-        "Rijstrook naar rechts verlegd"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bord J1 is een waarschuwingsbord voor een gevaarlijke bocht naar rechts. Pas je snelheid aan vóór de bocht."
-    },
-    {
-      "id": "k15",
-      "categorie": "kennis",
-      "onderwerp": "Snelheid",
-      "vraag": "Wat is de maximumsnelheid voor een motorfiets op een gewone weg buiten de bebouwde kom, als er geen borden staan?",
-      "opties": ["80 km/u", "60 km/u", "100 km/u"],
-      "antwoord": 0,
-      "uitleg": "Buiten de bebouwde kom geldt standaard 80 km/u. Op een autoweg is dat 100 km/u en op een autosnelweg geldt de op de borden aangegeven snelheid."
-    },
-    {
-      "id": "k16",
-      "categorie": "kennis",
-      "onderwerp": "Snelheid",
-      "vraag": "Wat is de standaard maximumsnelheid op een autoweg?",
-      "opties": ["100 km/u", "80 km/u", "120 km/u"],
-      "antwoord": 0,
-      "uitleg": "Op een autoweg (rechthoekig blauw bord met witte auto) geldt standaard 100 km/u, tenzij borden iets anders aangeven."
-    },
-    {
-      "id": "k17",
-      "categorie": "kennis",
-      "onderwerp": "Snelweg",
-      "vraag": "Mag je als motorrijder bij file over de vluchtstrook rijden?",
-      "opties": [
-        "Nee, dat mag niet",
-        "Ja, als je niet harder rijdt dan 50 km/u",
-        "Ja, motorfietsen zijn hiervan uitgezonderd"
-      ],
-      "antwoord": 0,
-      "uitleg": "De vluchtstrook is bedoeld voor pech en hulpdiensten. Rijden op de vluchtstrook is ook voor motorrijders verboden."
-    },
-    {
-      "id": "k18",
-      "categorie": "kennis",
-      "onderwerp": "Snelweg",
-      "vraag": "Mag je als motorrijder tussen twee rijstroken door rijden?",
-      "opties": [
-        "Nee, je moet altijd binnen één rijstrook blijven",
-        "Ja, altijd",
-        "Ja, maar alleen op de autosnelweg"
-      ],
-      "antwoord": 0,
-      "uitleg": "Je moet als bestuurder zoveel mogelijk binnen één rijstrook blijven. Tussen de rijstroken door rijden is niet toegestaan."
-    },
-    {
-      "id": "k19",
-      "categorie": "kennis",
-      "onderwerp": "Gedrag",
-      "vraag": "Mag je tijdens het rijden een mobiele telefoon vasthouden?",
-      "opties": [
-        "Nee, een elektronisch apparaat vasthouden tijdens het rijden is verboden",
-        "Ja, zolang je maar niet belt",
-        "Ja, als je stilstaat voor een rood verkeerslicht"
-      ],
-      "antwoord": 0,
-      "uitleg": "Het vasthouden van een mobiele telefoon of ander elektronisch apparaat tijdens het rijden is verboden, ook als je stilstaat voor een rood licht."
-    },
-    {
-      "id": "k20",
-      "categorie": "kennis",
-      "onderwerp": "Voertuig en documenten",
-      "vraag": "Welke documenten moet je bij je hebben als je op je motor rijdt?",
-      "opties": [
-        "Je rijbewijs en het kentekenbewijs",
-        "Alleen je rijbewijs",
-        "Je rijbewijs, kentekenbewijs en verzekeringsbewijs"
-      ],
-      "antwoord": 0,
-      "uitleg": "Je moet je rijbewijs en het kentekenbewijs kunnen tonen. Een verzekeringsbewijs hoef je niet bij je te hebben, de verzekering zelf is wel verplicht."
-    },
-
-    {
-      "id": "i01",
-      "categorie": "inzicht",
-      "onderwerp": "Voorrang",
-      "vraag": "Je nadert een gelijkwaardig kruispunt. Van links komt een tram. Wie gaat er voor?",
-      "opties": [
-        "De tram",
-        "Jij, want de tram komt van links",
-        "Degene die er het eerst is"
-      ],
-      "antwoord": 0,
-      "uitleg": "Een tram heeft op een gelijkwaardig kruispunt altijd voorrang, ook als hij van links komt."
-    },
-    {
-      "id": "i02",
-      "categorie": "inzicht",
-      "onderwerp": "Voorrang",
-      "vraag": "Je rijdt vanaf een uitrit de weg op. Wie moet je voor laten gaan?",
-      "opties": [
-        "Al het verkeer op de weg, ook fietsers en voetgangers",
-        "Alleen het verkeer van rechts",
-        "Alleen gemotoriseerd verkeer"
-      ],
-      "antwoord": 0,
-      "uitleg": "Wie een uitrit verlaat, moet al het andere verkeer voor laten gaan. Dat geldt ook voor voetgangers op het trottoir dat je kruist."
-    },
-    {
-      "id": "i03",
-      "categorie": "inzicht",
-      "onderwerp": "Rotonde",
-      "vraag": "Je nadert deze rotonde. Bij je toegang liggen haaientanden. Wie heeft voorrang?",
-      "afbeelding": "img/scene-rotonde.svg",
-      "opties": [
-        "Het verkeer dat al op de rotonde rijdt",
-        "Jij, want jij rijdt rechtdoor",
-        "Het verkeer dat van rechts de rotonde nadert"
-      ],
-      "antwoord": 0,
-      "uitleg": "Haaientanden bij je toegang betekenen dat je voorrang moet verlenen aan het verkeer dat al op de rotonde rijdt."
-    },
-    {
-      "id": "i04",
-      "categorie": "inzicht",
-      "onderwerp": "Remmen",
-      "vraag": "Je verdubbelt je snelheid van 40 naar 80 km/u. Wat gebeurt er met je remweg?",
-      "opties": [
-        "Die wordt ongeveer vier keer zo lang",
-        "Die wordt ongeveer twee keer zo lang",
-        "Die blijft ongeveer gelijk"
-      ],
-      "antwoord": 0,
-      "uitleg": "De remweg neemt toe met het kwadraat van de snelheid: twee keer zo hard betekent ongeveer vier keer zo'n lange remweg."
-    },
-    {
-      "id": "i05",
-      "categorie": "inzicht",
-      "onderwerp": "Motortechniek",
-      "vraag": "Welke rem levert bij een noodstop op droog asfalt de meeste remkracht?",
-      "opties": [
-        "De voorrem",
-        "De achterrem",
-        "Beide remmen leveren evenveel"
-      ],
-      "antwoord": 0,
-      "uitleg": "Bij remmen verplaatst het gewicht zich naar voren. De voorrem levert daardoor ongeveer 70% van de remkracht. Gebruik wel altijd beide remmen samen."
-    },
-    {
-      "id": "i06",
-      "categorie": "inzicht",
-      "onderwerp": "Motortechniek",
-      "vraag": "Je rijdt 70 km/u en wilt een bocht naar links insturen. Hoe stuur je de motor de bocht in?",
-      "opties": [
-        "Door kort lichte druk naar voren te geven op het linker stuureinde (tegensturen)",
-        "Door het stuur naar links te draaien zoals bij lage snelheid",
-        "Door alleen met je lichaam naar links te hangen"
-      ],
-      "antwoord": 0,
-      "uitleg": "Boven ongeveer 25 km/u stuur je een motor via tegensturen: lichte druk op het stuureinde aan de kant waar je heen wilt, waardoor de motor overhelt."
-    },
-    {
-      "id": "i07",
-      "categorie": "inzicht",
-      "onderwerp": "Bochttechniek",
-      "vraag": "Je nadert een onoverzichtelijke bocht naar rechts. Wat is de beste aanpak?",
-      "opties": [
-        "Snelheid minderen vóór de bocht, links in je rijstrook aanzetten voor beter zicht en naar de uitgang van de bocht kijken",
-        "Zo laat mogelijk remmen en middenin de bocht bijsturen",
-        "Zo dicht mogelijk langs de rechterkant rijden en in de bocht remmen"
-      ],
-      "antwoord": 0,
-      "uitleg": "Remmen doe je vóór de bocht. Door aan de buitenkant van je eigen rijstrook aan te zetten zie je verder, en je motor gaat waar je kijkt."
-    },
-    {
-      "id": "i08",
-      "categorie": "inzicht",
-      "onderwerp": "Bagage",
-      "vraag": "Je neemt bagage mee op je motor. Hoe pak je dat het beste aan?",
-      "opties": [
-        "Zo laag mogelijk en dicht bij het zwaartepunt, stevig vastgezet en gelijkmatig verdeeld",
-        "Zo hoog mogelijk op de duozit zodat het je niet hindert",
-        "Aan één kant, zodat je aan de andere kant vrij kunt bewegen"
-      ],
-      "antwoord": 0,
-      "uitleg": "Hoge of eenzijdige bagage verandert het zwaartepunt en maakt de motor onrustig. Laag, gelijkmatig verdeeld en goed vastgezet is het veiligst."
-    },
-    {
-      "id": "i09",
-      "categorie": "inzicht",
-      "onderwerp": "Motortechniek",
-      "vraag": "Wat is het gevolg van een te lage bandenspanning op je motor?",
-      "opties": [
-        "De motor stuurt zwaarder, de band slijt sneller en het brandstofverbruik stijgt",
-        "De motor stuurt lichter en de grip neemt toe",
-        "Alleen het brandstofverbruik stijgt, verder verandert er niets"
-      ],
-      "antwoord": 0,
-      "uitleg": "Te lage spanning maakt het stuurgedrag traag en onstabiel, verhoogt de slijtage en het verbruik, en de band kan oververhitten."
-    },
-    {
-      "id": "i10",
-      "categorie": "inzicht",
-      "onderwerp": "Inhalen",
-      "vraag": "In welke situatie mag je rechts inhalen?",
-      "opties": [
-        "Als er file staat en het verkeer op de linkerrijstrook langzamer rijdt dan jij",
-        "Nooit, rechts inhalen is altijd verboden",
-        "Altijd, zolang je maar niet harder rijdt dan is toegestaan"
-      ],
-      "antwoord": 0,
-      "uitleg": "Rechts inhalen mag onder andere bij filevorming en bij voorgesorteerd verkeer. In alle andere gevallen haal je links in."
-    },
-    {
-      "id": "i11",
-      "categorie": "inzicht",
-      "onderwerp": "Erf",
-      "vraag": "Wat geldt er op een erf?",
-      "opties": [
-        "Maximaal 15 km/u, voetgangers mogen de hele breedte gebruiken en je parkeert alleen in de vakken",
-        "Maximaal 30 km/u en je mag overal parkeren",
-        "Maximaal 15 km/u, maar voetgangers moeten op het trottoir blijven"
-      ],
-      "antwoord": 0,
-      "uitleg": "Op een erf is de hele weg voor iedereen: voetgangers mogen de volle breedte gebruiken, je rijdt maximaal 15 km/u en parkeren mag alleen in de vakken."
-    },
-    {
-      "id": "i12",
-      "categorie": "inzicht",
-      "onderwerp": "Motorspecifiek",
-      "vraag": "Het regent en je nadert een bocht. Wat is verstandig?",
-      "opties": [
-        "Eerder en rustiger remmen vóór de bocht en met minder hellingshoek door de bocht rijden",
-        "Even hard rijden, maar in de bocht harder remmen",
-        "Meer hellingshoek gebruiken zodat de banden meer grip krijgen"
-      ],
-      "antwoord": 0,
-      "uitleg": "Op nat wegdek heb je minder grip. Rem vroeger en rustiger vóór de bocht en beperk je hellingshoek; vermijd gladde delen zoals strepen en putdeksels."
-    },
-    {
-      "id": "i13",
-      "categorie": "inzicht",
-      "onderwerp": "Dode hoek",
-      "vraag": "Een vrachtwagen voor je zet zijn richtingaanwijzer naar rechts aan. Wat doe je?",
-      "opties": [
-        "Blijf ruim achter hem en ga niet rechts naast hem rijden",
-        "Haal hem snel rechts in voordat hij afslaat",
-        "Ga links naast hem rijden en toeter"
-      ],
-      "antwoord": 0,
-      "uitleg": "Een vrachtwagen zwenkt bij het rechtsaf slaan vaak eerst naar links en heeft rechts een grote dode hoek. Blijf erachter."
-    },
-    {
-      "id": "i14",
-      "categorie": "inzicht",
-      "onderwerp": "Motorspecifiek",
-      "vraag": "Je rijdt met je motor over een hoge brug en het waait hard van opzij. Wat doe je?",
-      "opties": [
-        "Snelheid minderen, stuur ontspannen maar stevig vasthouden en extra ruimte houden ten opzichte van ander verkeer",
-        "Harder rijden zodat de motor stabieler wordt",
-        "Het stuur zo los mogelijk laten zodat de motor zichzelf corrigeert"
-      ],
-      "antwoord": 0,
-      "uitleg": "Zijwind kan je motor verplaatsen, zeker als je achter een vrachtwagen vandaan komt. Minder snelheid en houd afstand tot andere weggebruikers."
-    },
-    {
-      "id": "i15",
-      "categorie": "inzicht",
-      "onderwerp": "Remmen",
-      "vraag": "Waaruit bestaat de stopafstand?",
-      "opties": [
-        "De reactieafstand plus de remweg",
-        "Alleen de remweg",
-        "De remweg plus de volgafstand"
-      ],
-      "antwoord": 0,
-      "uitleg": "Stopafstand = reactieafstand (de afstand die je aflegt voordat je reageert) + remweg (de afstand tijdens het remmen)."
-    },
-    {
-      "id": "i16",
-      "categorie": "inzicht",
-      "onderwerp": "Motorspecifiek",
-      "vraag": "Hoe zorg je er als motorrijder het beste voor dat je goed wordt gezien?",
-      "opties": [
-        "Opvallende kleding, dimlicht aan en een positie in je rijstrook waarin je in de spiegels van anderen zichtbaar bent",
-        "Zo dicht mogelijk achter de auto voor je blijven",
-        "Vooral hard optrekken zodat je snel voorbij bent"
-      ],
-      "antwoord": 0,
-      "uitleg": "Een motor is smal en wordt makkelijk over het hoofd gezien. Kies een zichtbare positie in je rijstrook, val op en houd afstand."
-    },
-    {
-      "id": "i17",
-      "categorie": "inzicht",
-      "onderwerp": "Volgafstand",
-      "vraag": "Hoeveel volgafstand houd je minimaal aan onder normale omstandigheden?",
-      "opties": [
-        "Minimaal twee seconden",
-        "Minimaal één seconde",
-        "Vijf meter, ongeacht de snelheid"
-      ],
-      "antwoord": 0,
-      "uitleg": "De tweesecondenregel: tel na een vast punt twee tellen. Bij regen, mist of met een passagier maak je die afstand groter."
-    },
-    {
-      "id": "i18",
-      "categorie": "inzicht",
-      "onderwerp": "Inhalen",
-      "vraag": "Je wilt de auto voor je inhalen op een weg buiten de bebouwde kom. Er nadert een tegenligger. Wat doe je?",
-      "afbeelding": "img/scene-inhalen.svg",
-      "opties": [
-        "Je haalt niet in en wacht tot de weg vrij is",
-        "Je haalt snel in, want een motor accelereert hard genoeg",
-        "Je gaat vast links rijden zodat je klaar staat om in te halen"
-      ],
-      "antwoord": 0,
-      "uitleg": "Inhalen mag alleen als je de hele manoeuvre veilig kunt afronden zonder tegenliggers te hinderen. Bij twijfel: niet inhalen."
-    },
-    {
-      "id": "i19",
-      "categorie": "inzicht",
-      "onderwerp": "Passagier",
-      "vraag": "Wat geldt er als je een passagier achterop meeneemt?",
-      "opties": [
-        "De passagier moet een goedgekeurde helm dragen en zijn voeten op de voetsteunen kunnen zetten",
-        "Een helm is voor de passagier niet verplicht",
-        "Een passagier mag alleen als je motor meer dan 35 kW heeft"
-      ],
-      "antwoord": 0,
-      "uitleg": "Een passagier moet een goedgekeurde helm dragen en er moeten voetsteunen zijn waar hij met zijn voeten bij kan. Houd rekening met een langere remweg."
-    },
-    {
-      "id": "i20",
-      "categorie": "inzicht",
-      "onderwerp": "Motortechniek",
-      "vraag": "Wat is de wettelijke minimale profieldiepte van motorbanden?",
-      "opties": ["1,0 mm", "1,6 mm", "2,5 mm"],
-      "antwoord": 0,
-      "uitleg": "Voor motorbanden geldt een minimum van 1,0 mm profiel over de hele omtrek. Voor autobanden is dat 1,6 mm."
-    }
-  ]
+  {
+   "id": "g02",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Snelweg",
+   "vraag": "Je nadert op de autosnelweg een stilstaande file terwijl je zelf nog 100 km/u rijdt. Wat doe je?",
+   "afbeelding": "img/pov-file-snelweg.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij een stilstaande file moet je flink snelheid minderen. Zet daarnaast je alarmlichten aan om het verkeer achter je te waarschuwen."
+  },
+  {
+   "id": "g03",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Voorrang",
+   "vraag": "Je rijdt 80 km/u op een voorrangsweg. Ver voor je staat een auto stil bij de haaientanden van een zijweg. De bestuurder kijkt jouw kant op. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Er is nog geen direct gevaar, maar de situatie kan veranderen als hij toch optrekt. Gas loslaten geeft je remklaarheid zonder onnodig hard te remmen."
+  },
+  {
+   "id": "g04",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "Je rijdt 30 km/u binnen de bebouwde kom. Voor je rijdt een fietser rustig en stabiel rechtdoor op het fietspad, ruim naast de rijbaan. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 2,
+   "uitleg": "De fietser rijdt op een eigen fietspad, stabiel en voorspelbaar. Er is geen aanleiding om snelheid te minderen."
+  },
+  {
+   "id": "g05",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Afslaan",
+   "vraag": "Je wilt rechtsaf slaan. Rechts naast je rijdt een fietser die rechtdoor gaat. Wat doe je?",
+   "afbeelding": "img/pov-fietser-rechts.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je moet de rechtdoorgaande fietser voor laten gaan. Remmen en hem laten passeren voorkomt een klassieke afslagbotsing."
+  },
+  {
+   "id": "g06",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "In een woonstraat rolt vlak voor je een bal tussen geparkeerde auto's de rijbaan op. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Achter een bal komt vaak een kind. Direct remmen is hier de enige juiste reactie.",
+   "afbeelding": "img/pov-kind-bal.svg"
+  },
+  {
+   "id": "g07",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Voorrang",
+   "vraag": "Je nadert een gelijkwaardig kruispunt. Van rechts komt een auto die zijn snelheid niet mindert. Wat doe je?",
+   "afbeelding": "img/pov-kruispunt-rechts.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Op een gelijkwaardig kruispunt heeft verkeer van rechts voorrang. Bovendien mindert hij geen snelheid: remmen dus."
+  },
+  {
+   "id": "g08",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "Binnen de bebouwde kom staat een lijnbus bij een halte. De bus zet zijn richtingaanwijzer naar links aan. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Binnen de bebouwde kom moet je een bus die vanaf een halte wegrijdt voor laten gaan. Gas loslaten en de bus ruimte geven.",
+   "afbeelding": "img/pov-bus-halte.svg"
+  },
+  {
+   "id": "g09",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Je nadert een bocht met tramrails op een nat wegdek. Wat doe je?",
+   "afbeelding": "img/pov-glad-tramrails.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Natte rails zijn spekglad voor een motor. Minder snelheid vóór de bocht en kruis de rails zo haaks mogelijk zonder in de bocht te remmen."
+  },
+  {
+   "id": "g10",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Je rijdt vlak achter een vrachtwagen, precies in zijn dode hoek. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "In de dode hoek ziet de chauffeur je niet en heb je zelf geen zicht vooruit. Laat gas los en val terug tot je zijn spiegels weer ziet.",
+   "afbeelding": "img/pov-vrachtwagen-dodehoek.svg"
+  },
+  {
+   "id": "g11",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Snelweg",
+   "vraag": "Je rijdt 100 km/u op de rechterrijstrook van de autosnelweg. Rechts voegt een auto met duidelijk lagere snelheid in. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Je moet invoegend verkeer de kans geven. Gas loslaten en zo nodig naar links uitwijken als dat veilig kan.",
+   "afbeelding": "img/pov-invoegen-snelweg.svg"
+  },
+  {
+   "id": "g12",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Verkeerslichten",
+   "vraag": "Je nadert een kruispunt met groen licht. Je hebt vrij zicht en er is geen kruisend of afslaand verkeer. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 2,
+   "uitleg": "Groen licht, vrij zicht en geen conflicterend verkeer: er is geen reden om je snelheid aan te passen.",
+   "afbeelding": "img/pov-verkeerslicht-groen.svg"
+  },
+  {
+   "id": "g13",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Volgafstand",
+   "vraag": "Op een dalende weg gaan bij de auto voor je plotseling de remlichten aan. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bergaf is je remweg langer. Remlichten voor je betekenen: direct zelf remmen.",
+   "afbeelding": "img/pov-file-kop-staart.svg"
+  },
+  {
+   "id": "g14",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Kwetsbare verkeersdeelnemers",
+   "vraag": "Voor je rijdt een fietser met volle tassen aan het stuur die duidelijk zwalkt. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Een zwalkende fietser is onvoorspelbaar. Neem gas terug, houd afstand en haal pas in als je ruim voorbij kunt."
+  },
+  {
+   "id": "g15",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Kwetsbare verkeersdeelnemers",
+   "vraag": "Je rijdt langs een school. Op de stoep staan kinderen; één kind kijkt naar de overkant. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Kinderen zijn onvoorspelbaar en dit kind lijkt te willen oversteken. Gas loslaten en remklaar zijn.",
+   "afbeelding": "img/pov-schoolzone.svg"
+  },
+  {
+   "id": "g16",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Je rijdt 80 km/u buiten de bebouwde kom. Een tegenligger staat stil met zijn richtingaanwijzer naar links om een oprit in te draaien. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Hij moet jou voor laten gaan, maar motorrijders worden vaak over het hoofd gezien. Gas loslaten en remklaar zijn."
+  },
+  {
+   "id": "g17",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Uitrit",
+   "vraag": "Vlak voor je rijdt een auto achteruit een uitrit uit de rijbaan op. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "De auto komt al de rijbaan op en de bestuurder heeft achteruit slecht zicht. Remmen.",
+   "afbeelding": "img/pov-uitrit-auto.svg"
+  },
+  {
+   "id": "g18",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Snelweg",
+   "vraag": "Je rijdt op de rechterrijstrook van de snelweg. Een auto van de linkerrijstrook schiet vlak voor je naar rechts. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je volgafstand is in één klap weg. Remmen om je afstand te herstellen."
+  },
+  {
+   "id": "g19",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Erf",
+   "vraag": "Je rijdt stapvoets over een erf. Bij een geparkeerde auto branden de achteruitrijlichten. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Achteruitrijlichten betekenen dat de auto zo de weg op komt. Remmen en hem voor laten gaan."
+  },
+  {
+   "id": "g20",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Je rijdt 80 km/u op een rechte, overzichtelijke weg. Droog wegdek, goed zicht, geen ander verkeer. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 2,
+   "uitleg": "Er is geen enkel gevaar zichtbaar en je rijdt niet te hard. Je hoeft niets te doen."
+  },
+  {
+   "id": "k01",
+   "categorie": "kennis",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Wat is wettelijk verplicht als je op een motorfiets rijdt?",
+   "opties": [
+    "Een goedgekeurde helm",
+    "Een goedgekeurde helm, motorhandschoenen en motorlaarzen",
+    "Alleen beschermende kleding, een helm is een advies"
+   ],
+   "antwoord": 0,
+   "uitleg": "Alleen een goedgekeurde helm is wettelijk verplicht, voor bestuurder én passagier. Handschoenen, jas en laarzen zijn sterk aan te raden maar niet verplicht."
+  },
+  {
+   "id": "k02",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Is een motorfiets in Nederland APK-plichtig?",
+   "opties": [
+    "Nee",
+    "Ja, elke twee jaar",
+    "Ja, elk jaar"
+   ],
+   "antwoord": 0,
+   "uitleg": "Motorfietsen zijn in Nederland niet APK-plichtig. Je blijft wel zelf verantwoordelijk voor de technische staat van je motor."
+  },
+  {
+   "id": "k03",
+   "categorie": "kennis",
+   "onderwerp": "Verlichting",
+   "vraag": "Moet je overdag met dimlicht rijden op een motorfiets?",
+   "opties": [
+    "Ja, dat is verplicht",
+    "Nee, alleen bij slecht zicht",
+    "Nee, alleen buiten de bebouwde kom"
+   ],
+   "antwoord": 0,
+   "uitleg": "Motorfietsen moeten ook overdag dimlicht voeren. Dat maakt je een stuk beter zichtbaar voor ander verkeer."
+  },
+  {
+   "id": "k04",
+   "categorie": "kennis",
+   "onderwerp": "Rijbewijs",
+   "vraag": "Wat is het maximale motorvermogen voor rijbewijs A2?",
+   "opties": [
+    "35 kW",
+    "11 kW",
+    "70 kW"
+   ],
+   "antwoord": 0,
+   "uitleg": "Met A2 mag je op een motor van maximaal 35 kW rijden, met een vermogen/gewichtsverhouding van maximaal 0,2 kW/kg."
+  },
+  {
+   "id": "k05",
+   "categorie": "kennis",
+   "onderwerp": "Rijbewijs",
+   "vraag": "Vanaf welke leeftijd mag je het rijbewijs A1 halen?",
+   "opties": [
+    "18 jaar",
+    "16 jaar",
+    "20 jaar"
+   ],
+   "antwoord": 0,
+   "uitleg": "A1 (lichte motor tot 125 cc en 11 kW) mag vanaf 18 jaar, A2 vanaf 20 jaar en de onbeperkte A vanaf 24 jaar (of vanaf 20 jaar na twee jaar A2)."
+  },
+  {
+   "id": "k06",
+   "categorie": "kennis",
+   "onderwerp": "Alcohol",
+   "vraag": "Je hebt je rijbewijs korter dan vijf jaar. Wat is het maximale alcoholpromillage voor jou?",
+   "opties": [
+    "0,2 promille",
+    "0,5 promille",
+    "0,8 promille"
+   ],
+   "antwoord": 0,
+   "uitleg": "Voor beginnende bestuurders geldt 0,2 promille. Voor ervaren bestuurders is de grens 0,5 promille."
+  },
+  {
+   "id": "k07",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-b6.svg",
+   "opties": [
+    "Verleen voorrang aan bestuurders op de kruisende weg",
+    "Je bent voorrangsweg opgereden",
+    "Stoppen is verplicht"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord B6: verleen voorrang aan bestuurders op de kruisende weg. Je hoeft niet te stoppen, wel voorrang te verlenen."
+  },
+  {
+   "id": "k08",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-b1.svg",
+   "opties": [
+    "Je rijdt op een voorrangsweg",
+    "Einde voorrangsweg",
+    "Voorrangskruispunt, zijweg links"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord B1: voorrangsweg. Verkeer op de zijwegen moet jou voorrang verlenen."
+  },
+  {
+   "id": "k09",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-c11.svg",
+   "opties": [
+    "Gesloten voor motorfietsen",
+    "Gesloten voor bromfietsen",
+    "Parkeerverbod voor motorfietsen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord C11: gesloten voor motorfietsen. Je mag deze weg met je motor niet in."
+  },
+  {
+   "id": "k10",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-f1.svg",
+   "opties": [
+    "Verbod voor bestuurders om elkaar in te halen",
+    "Verbod voor vrachtauto's om in te halen",
+    "Einde inhaalverbod"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord F1: verbod voor motorvoertuigen om elkaar onderling in te halen. Een fietser of bromfietser mag je wel inhalen."
+  },
+  {
+   "id": "k11",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-d1.svg",
+   "opties": [
+    "Rotonde, verplichte rijrichting",
+    "Rotonde met voorrang voor het verkeer op de rotonde",
+    "Keerverbod"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord D1 geeft de verplichte rijrichting op een rotonde aan. Wie voorrang heeft, lees je af aan de haaientanden of borden bij de toegang."
+  },
+  {
+   "id": "k12",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Je rijdt dit bord voorbij. Welke maximumsnelheid geldt er nu?",
+   "afbeelding": "img/bord-g5.svg",
+   "opties": [
+    "15 km/u",
+    "30 km/u",
+    "50 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord G5 geeft een erf aan. Daar mag je maximaal 15 km/u rijden en parkeer je alleen in de daarvoor bestemde vakken."
+  },
+  {
+   "id": "k13",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-l2.svg",
+   "opties": [
+    "Doodlopende weg",
+    "Eenrichtingsweg",
+    "Verboden in te rijden"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord L2: doodlopende weg. Je mag de weg wel inrijden, maar je kunt er niet doorheen."
+  },
+  {
+   "id": "k14",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-j1.svg",
+   "opties": [
+    "Gevaarlijke bocht naar rechts",
+    "Verplicht rechtsaf",
+    "Rijstrook naar rechts verlegd"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord J1 is een waarschuwingsbord voor een gevaarlijke bocht naar rechts. Pas je snelheid aan vóór de bocht."
+  },
+  {
+   "id": "k15",
+   "categorie": "kennis",
+   "onderwerp": "Snelheid",
+   "vraag": "Wat is de maximumsnelheid voor een motorfiets op een gewone weg buiten de bebouwde kom, als er geen borden staan?",
+   "opties": [
+    "80 km/u",
+    "60 km/u",
+    "100 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Buiten de bebouwde kom geldt standaard 80 km/u. Op een autoweg is dat 100 km/u en op een autosnelweg geldt de op de borden aangegeven snelheid."
+  },
+  {
+   "id": "k16",
+   "categorie": "kennis",
+   "onderwerp": "Snelheid",
+   "vraag": "Wat is de standaard maximumsnelheid op een autoweg?",
+   "opties": [
+    "100 km/u",
+    "80 km/u",
+    "120 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Op een autoweg (rechthoekig blauw bord met witte auto) geldt standaard 100 km/u, tenzij borden iets anders aangeven."
+  },
+  {
+   "id": "k17",
+   "categorie": "kennis",
+   "onderwerp": "Snelweg",
+   "vraag": "Mag je als motorrijder bij file over de vluchtstrook rijden?",
+   "opties": [
+    "Nee, dat mag niet",
+    "Ja, als je niet harder rijdt dan 50 km/u",
+    "Ja, motorfietsen zijn hiervan uitgezonderd"
+   ],
+   "antwoord": 0,
+   "uitleg": "De vluchtstrook is bedoeld voor pech en hulpdiensten. Rijden op de vluchtstrook is ook voor motorrijders verboden."
+  },
+  {
+   "id": "k18",
+   "categorie": "kennis",
+   "onderwerp": "Snelweg",
+   "vraag": "Mag je als motorrijder tussen twee rijstroken door rijden?",
+   "opties": [
+    "Nee, je moet altijd binnen één rijstrook blijven",
+    "Ja, altijd",
+    "Ja, maar alleen op de autosnelweg"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je moet als bestuurder zoveel mogelijk binnen één rijstrook blijven. Tussen de rijstroken door rijden is niet toegestaan."
+  },
+  {
+   "id": "k19",
+   "categorie": "kennis",
+   "onderwerp": "Gedrag",
+   "vraag": "Mag je tijdens het rijden een mobiele telefoon vasthouden?",
+   "opties": [
+    "Nee, een elektronisch apparaat vasthouden tijdens het rijden is verboden",
+    "Ja, zolang je maar niet belt",
+    "Ja, als je stilstaat voor een rood verkeerslicht"
+   ],
+   "antwoord": 0,
+   "uitleg": "Het vasthouden van een mobiele telefoon of ander elektronisch apparaat tijdens het rijden is verboden, ook als je stilstaat voor een rood licht."
+  },
+  {
+   "id": "k20",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Welke documenten moet je bij je hebben als je op je motor rijdt?",
+   "opties": [
+    "Je rijbewijs en het kentekenbewijs",
+    "Alleen je rijbewijs",
+    "Je rijbewijs, kentekenbewijs en verzekeringsbewijs"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je moet je rijbewijs en het kentekenbewijs kunnen tonen. Een verzekeringsbewijs hoef je niet bij je te hebben, de verzekering zelf is wel verplicht."
+  },
+  {
+   "id": "i01",
+   "categorie": "inzicht",
+   "onderwerp": "Voorrang",
+   "vraag": "Je nadert een gelijkwaardig kruispunt. Van links komt een tram. Wie gaat er voor?",
+   "opties": [
+    "De tram",
+    "Jij, want de tram komt van links",
+    "Degene die er het eerst is"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een tram heeft op een gelijkwaardig kruispunt altijd voorrang, ook als hij van links komt."
+  },
+  {
+   "id": "i02",
+   "categorie": "inzicht",
+   "onderwerp": "Voorrang",
+   "vraag": "Je rijdt vanaf een uitrit de weg op. Wie moet je voor laten gaan?",
+   "opties": [
+    "Al het verkeer op de weg, ook fietsers en voetgangers",
+    "Alleen het verkeer van rechts",
+    "Alleen gemotoriseerd verkeer"
+   ],
+   "antwoord": 0,
+   "uitleg": "Wie een uitrit verlaat, moet al het andere verkeer voor laten gaan. Dat geldt ook voor voetgangers op het trottoir dat je kruist."
+  },
+  {
+   "id": "i03",
+   "categorie": "inzicht",
+   "onderwerp": "Rotonde",
+   "vraag": "Je nadert deze rotonde. Bij je toegang liggen haaientanden. Wie heeft voorrang?",
+   "afbeelding": "img/pov-rotonde.svg",
+   "opties": [
+    "Het verkeer dat al op de rotonde rijdt",
+    "Jij, want jij rijdt rechtdoor",
+    "Het verkeer dat van rechts de rotonde nadert"
+   ],
+   "antwoord": 0,
+   "uitleg": "Haaientanden bij je toegang betekenen dat je voorrang moet verlenen aan het verkeer dat al op de rotonde rijdt."
+  },
+  {
+   "id": "i04",
+   "categorie": "inzicht",
+   "onderwerp": "Remmen",
+   "vraag": "Je verdubbelt je snelheid van 40 naar 80 km/u. Wat gebeurt er met je remweg?",
+   "opties": [
+    "Die wordt ongeveer vier keer zo lang",
+    "Die wordt ongeveer twee keer zo lang",
+    "Die blijft ongeveer gelijk"
+   ],
+   "antwoord": 0,
+   "uitleg": "De remweg neemt toe met het kwadraat van de snelheid: twee keer zo hard betekent ongeveer vier keer zo'n lange remweg."
+  },
+  {
+   "id": "i05",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Welke rem levert bij een noodstop op droog asfalt de meeste remkracht?",
+   "opties": [
+    "De voorrem",
+    "De achterrem",
+    "Beide remmen leveren evenveel"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij remmen verplaatst het gewicht zich naar voren. De voorrem levert daardoor ongeveer 70% van de remkracht. Gebruik wel altijd beide remmen samen."
+  },
+  {
+   "id": "i06",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Je rijdt 70 km/u en wilt een bocht naar links insturen. Hoe stuur je de motor de bocht in?",
+   "opties": [
+    "Door kort lichte druk naar voren te geven op het linker stuureinde (tegensturen)",
+    "Door het stuur naar links te draaien zoals bij lage snelheid",
+    "Door alleen met je lichaam naar links te hangen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Boven ongeveer 25 km/u stuur je een motor via tegensturen: lichte druk op het stuureinde aan de kant waar je heen wilt, waardoor de motor overhelt."
+  },
+  {
+   "id": "i07",
+   "categorie": "inzicht",
+   "onderwerp": "Bochttechniek",
+   "vraag": "Je nadert een onoverzichtelijke bocht naar rechts. Wat is de beste aanpak?",
+   "opties": [
+    "Snelheid minderen vóór de bocht, links in je rijstrook aanzetten voor beter zicht en naar de uitgang van de bocht kijken",
+    "Zo laat mogelijk remmen en middenin de bocht bijsturen",
+    "Zo dicht mogelijk langs de rechterkant rijden en in de bocht remmen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Remmen doe je vóór de bocht. Door aan de buitenkant van je eigen rijstrook aan te zetten zie je verder, en je motor gaat waar je kijkt."
+  },
+  {
+   "id": "i08",
+   "categorie": "inzicht",
+   "onderwerp": "Bagage",
+   "vraag": "Je neemt bagage mee op je motor. Hoe pak je dat het beste aan?",
+   "opties": [
+    "Zo laag mogelijk en dicht bij het zwaartepunt, stevig vastgezet en gelijkmatig verdeeld",
+    "Zo hoog mogelijk op de duozit zodat het je niet hindert",
+    "Aan één kant, zodat je aan de andere kant vrij kunt bewegen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Hoge of eenzijdige bagage verandert het zwaartepunt en maakt de motor onrustig. Laag, gelijkmatig verdeeld en goed vastgezet is het veiligst."
+  },
+  {
+   "id": "i09",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Wat is het gevolg van een te lage bandenspanning op je motor?",
+   "opties": [
+    "De motor stuurt zwaarder, de band slijt sneller en het brandstofverbruik stijgt",
+    "De motor stuurt lichter en de grip neemt toe",
+    "Alleen het brandstofverbruik stijgt, verder verandert er niets"
+   ],
+   "antwoord": 0,
+   "uitleg": "Te lage spanning maakt het stuurgedrag traag en onstabiel, verhoogt de slijtage en het verbruik, en de band kan oververhitten."
+  },
+  {
+   "id": "i10",
+   "categorie": "inzicht",
+   "onderwerp": "Inhalen",
+   "vraag": "In welke situatie mag je rechts inhalen?",
+   "opties": [
+    "Als er file staat en het verkeer op de linkerrijstrook langzamer rijdt dan jij",
+    "Nooit, rechts inhalen is altijd verboden",
+    "Altijd, zolang je maar niet harder rijdt dan is toegestaan"
+   ],
+   "antwoord": 0,
+   "uitleg": "Rechts inhalen mag onder andere bij filevorming en bij voorgesorteerd verkeer. In alle andere gevallen haal je links in."
+  },
+  {
+   "id": "i11",
+   "categorie": "inzicht",
+   "onderwerp": "Erf",
+   "vraag": "Wat geldt er op een erf?",
+   "opties": [
+    "Maximaal 15 km/u, voetgangers mogen de hele breedte gebruiken en je parkeert alleen in de vakken",
+    "Maximaal 30 km/u en je mag overal parkeren",
+    "Maximaal 15 km/u, maar voetgangers moeten op het trottoir blijven"
+   ],
+   "antwoord": 0,
+   "uitleg": "Op een erf is de hele weg voor iedereen: voetgangers mogen de volle breedte gebruiken, je rijdt maximaal 15 km/u en parkeren mag alleen in de vakken."
+  },
+  {
+   "id": "i12",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Het regent en je nadert een bocht. Wat is verstandig?",
+   "opties": [
+    "Eerder en rustiger remmen vóór de bocht en met minder hellingshoek door de bocht rijden",
+    "Even hard rijden, maar in de bocht harder remmen",
+    "Meer hellingshoek gebruiken zodat de banden meer grip krijgen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Op nat wegdek heb je minder grip. Rem vroeger en rustiger vóór de bocht en beperk je hellingshoek; vermijd gladde delen zoals strepen en putdeksels."
+  },
+  {
+   "id": "i13",
+   "categorie": "inzicht",
+   "onderwerp": "Dode hoek",
+   "vraag": "Een vrachtwagen voor je zet zijn richtingaanwijzer naar rechts aan. Wat doe je?",
+   "opties": [
+    "Blijf ruim achter hem en ga niet rechts naast hem rijden",
+    "Haal hem snel rechts in voordat hij afslaat",
+    "Ga links naast hem rijden en toeter"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een vrachtwagen zwenkt bij het rechtsaf slaan vaak eerst naar links en heeft rechts een grote dode hoek. Blijf erachter."
+  },
+  {
+   "id": "i14",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Je rijdt met je motor over een hoge brug en het waait hard van opzij. Wat doe je?",
+   "opties": [
+    "Snelheid minderen, stuur ontspannen maar stevig vasthouden en extra ruimte houden ten opzichte van ander verkeer",
+    "Harder rijden zodat de motor stabieler wordt",
+    "Het stuur zo los mogelijk laten zodat de motor zichzelf corrigeert"
+   ],
+   "antwoord": 0,
+   "uitleg": "Zijwind kan je motor verplaatsen, zeker als je achter een vrachtwagen vandaan komt. Minder snelheid en houd afstand tot andere weggebruikers."
+  },
+  {
+   "id": "i15",
+   "categorie": "inzicht",
+   "onderwerp": "Remmen",
+   "vraag": "Waaruit bestaat de stopafstand?",
+   "opties": [
+    "De reactieafstand plus de remweg",
+    "Alleen de remweg",
+    "De remweg plus de volgafstand"
+   ],
+   "antwoord": 0,
+   "uitleg": "Stopafstand = reactieafstand (de afstand die je aflegt voordat je reageert) + remweg (de afstand tijdens het remmen)."
+  },
+  {
+   "id": "i16",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Hoe zorg je er als motorrijder het beste voor dat je goed wordt gezien?",
+   "opties": [
+    "Opvallende kleding, dimlicht aan en een positie in je rijstrook waarin je in de spiegels van anderen zichtbaar bent",
+    "Zo dicht mogelijk achter de auto voor je blijven",
+    "Vooral hard optrekken zodat je snel voorbij bent"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een motor is smal en wordt makkelijk over het hoofd gezien. Kies een zichtbare positie in je rijstrook, val op en houd afstand."
+  },
+  {
+   "id": "i17",
+   "categorie": "inzicht",
+   "onderwerp": "Volgafstand",
+   "vraag": "Hoeveel volgafstand houd je minimaal aan onder normale omstandigheden?",
+   "opties": [
+    "Minimaal twee seconden",
+    "Minimaal één seconde",
+    "Vijf meter, ongeacht de snelheid"
+   ],
+   "antwoord": 0,
+   "uitleg": "De tweesecondenregel: tel na een vast punt twee tellen. Bij regen, mist of met een passagier maak je die afstand groter."
+  },
+  {
+   "id": "i18",
+   "categorie": "inzicht",
+   "onderwerp": "Inhalen",
+   "vraag": "Je wilt de auto voor je inhalen op een weg buiten de bebouwde kom. Er nadert een tegenligger. Wat doe je?",
+   "afbeelding": "img/pov-tegenligger-inhalen.svg",
+   "opties": [
+    "Je haalt niet in en wacht tot de weg vrij is",
+    "Je haalt snel in, want een motor accelereert hard genoeg",
+    "Je gaat vast links rijden zodat je klaar staat om in te halen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Inhalen mag alleen als je de hele manoeuvre veilig kunt afronden zonder tegenliggers te hinderen. Bij twijfel: niet inhalen."
+  },
+  {
+   "id": "i19",
+   "categorie": "inzicht",
+   "onderwerp": "Passagier",
+   "vraag": "Wat geldt er als je een passagier achterop meeneemt?",
+   "opties": [
+    "De passagier moet een goedgekeurde helm dragen en zijn voeten op de voetsteunen kunnen zetten",
+    "Een helm is voor de passagier niet verplicht",
+    "Een passagier mag alleen als je motor meer dan 35 kW heeft"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een passagier moet een goedgekeurde helm dragen en er moeten voetsteunen zijn waar hij met zijn voeten bij kan. Houd rekening met een langere remweg."
+  },
+  {
+   "id": "i20",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Wat is de wettelijke minimale profieldiepte van motorbanden?",
+   "opties": [
+    "1,0 mm",
+    "1,6 mm",
+    "2,5 mm"
+   ],
+   "antwoord": 0,
+   "uitleg": "Voor motorbanden geldt een minimum van 1,0 mm profiel over de hele omtrek. Voor autobanden is dat 1,6 mm."
+  },
+  {
+   "id": "g21",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Kwetsbare verkeersdeelnemers",
+   "vraag": "Je nadert een zebrapad. Een voetganger stapt de oversteekplaats op. Wat doe je?",
+   "afbeelding": "img/pov-zebra-voetganger.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Voetgangers op of vlak bij een zebrapad moet je voor laten gaan. Remmen en zorgen dat de voetganger rustig kan oversteken."
+  },
+  {
+   "id": "g22",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Dode hoek",
+   "vraag": "De vrachtwagen voor je zet zijn richtingaanwijzer naar rechts aan. Jij gaat rechtdoor. Wat doe je?",
+   "afbeelding": "img/pov-vrachtwagen-rechtsaf.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Een vrachtwagen zwenkt bij rechtsaf slaan vaak eerst naar links uit. Neem gas terug, blijf erachter en ga er niet rechts langs."
+  },
+  {
+   "id": "g23",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Zicht en weer",
+   "vraag": "Je rijdt in dichte mist. Voor je doemen vaag achterlichten op. Wat doe je?",
+   "afbeelding": "img/pov-mist.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "In mist zie je pas laat hoe dichtbij iets is. Rem direct en pas je snelheid aan aan wat je werkelijk kunt overzien."
+  },
+  {
+   "id": "g24",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Zicht en weer",
+   "vraag": "Je rijdt in het donker. Een tegenligger komt met fel licht op je af. Wat doe je?",
+   "afbeelding": "img/pov-nacht-tegenligger.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Kijk niet in de koplampen maar naar de rechter kantstreep, en neem gas terug tot je weer voldoende zicht hebt."
+  },
+  {
+   "id": "g25",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bochttechniek",
+   "vraag": "Je nadert een gewaarschuwde bocht op een nat wegdek. Wat doe je?",
+   "afbeelding": "img/pov-natte-bocht.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Op nat wegdek heb je fors minder grip. Rem vóór de bocht af tot een snelheid waarmee je de bocht zonder bijsturen doorkomt."
+  },
+  {
+   "id": "g26",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Wegwerkzaamheden",
+   "vraag": "Vlak voor je versmallen pylonen je rijstrook door wegwerkzaamheden. Wat doe je?",
+   "afbeelding": "img/pov-wegwerkzaamheden.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij wegwerkzaamheden is de ruimte krap en ligt het wegdek er vaak slecht bij. Snelheid minderen is hier noodzakelijk."
+  },
+  {
+   "id": "g27",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Spoorwegovergang",
+   "vraag": "Je nadert een onbewaakte spoorwegovergang. Je hebt geen vrij zicht op het spoor. Wat doe je?",
+   "afbeelding": "img/pov-spoorwegovergang.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij een onbewaakte overweg zonder vrij zicht moet je snelheid sterk minderen en zo nodig stoppen om zelf te kijken."
+  },
+  {
+   "id": "g28",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Je rijdt 80 km/u. Ver voor je rijdt een tractor met ongeveer 25 km/u. Wat doe je?",
+   "afbeelding": "img/pov-tractor.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Het snelheidsverschil is groot, maar de tractor is nog ver weg. Gas loslaten en rustig aansluiten tot je veilig kunt inhalen."
+  },
+  {
+   "id": "g29",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Op een landweg staat een hert midden op de rijbaan. Wat doe je?",
+   "afbeelding": "img/pov-overstekend-dier.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Remmen en rekening houden met meer dieren: wild steekt zelden alleen over. Uitwijken op een motor is riskanter dan remmen."
+  },
+  {
+   "id": "g30",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Op een smalle weg nadert een tegenligger terwijl rechts van je een fietser rijdt. Wat doe je?",
+   "afbeelding": "img/pov-smalle-weg-tegenligger.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Je kunt niet tegelijk de fietser ruim passeren en de tegenligger kruisen. Neem gas terug zodat je de ontmoeting kunt spreiden."
+  },
+  {
+   "id": "g31",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Je rijdt op een open brug met harde zijwind en nadert een vrachtwagen. Wat doe je?",
+   "afbeelding": "img/pov-zijwind-brug.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Achter een vrachtwagen valt de wind even weg en daarna krijg je een klap zijwind. Minder snelheid en houd extra afstand."
+  },
+  {
+   "id": "g32",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Voorrang",
+   "vraag": "Voor je kruist een tram de weg. Wat doe je?",
+   "afbeelding": "img/pov-tram.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een tram kan niet uitwijken en heeft in de meeste situaties voorrang. Remmen en de tram laten passeren."
+  },
+  {
+   "id": "g33",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Kwetsbare verkeersdeelnemers",
+   "vraag": "Binnen de bebouwde kom rijdt rechts voor je een bromfietser rustig op de rijbaan. Wat doe je?",
+   "afbeelding": "img/pov-brommer-rechts.svg",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Bromfietsers zijn onvoorspelbaar en kunnen plotseling uitwijken. Neem gas terug en haal pas in als je ruim langs kunt."
+  },
+  {
+   "id": "g34",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Kwetsbare verkeersdeelnemers",
+   "vraag": "De fietser voor je steekt zijn linkerarm uit. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Hij geeft aan dat hij naar links gaat en kruist daarmee jouw pad. Remmen en hem voor laten gaan."
+  },
+  {
+   "id": "g35",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Snelweg",
+   "vraag": "Op de autosnelweg staat verderop een auto met pech op de vluchtstrook met alarmlichten aan. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Er kunnen mensen naast de auto lopen. Gas loslaten en zo mogelijk een rijstrook naar links om ruimte te geven."
+  },
+  {
+   "id": "g36",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "De taxi voor je remt plotseling af en zet zijn alarmlichten aan. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Hij stopt om een passagier te laten uitstappen. Remmen, en let op portieren die opengaan."
+  },
+  {
+   "id": "g37",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Verkeerslichten",
+   "vraag": "Het verkeerslicht voor je springt op oranje. Je kunt nog veilig en rustig tot stilstand komen. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Oranje betekent stoppen, tenzij dat niet meer veilig kan. Je kunt veilig stoppen, dus je remt."
+  },
+  {
+   "id": "g38",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "Je rijdt 30 km/u in een 30-kilometerzone met drempels. Er is geen ander verkeer en je hebt vrij zicht. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 2,
+   "uitleg": "Je rijdt al met een passende snelheid en er is geen gevaar zichtbaar. Je hoeft niets te doen."
+  },
+  {
+   "id": "g39",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Volgafstand",
+   "vraag": "De auto met aanhangwagen voor je begint duidelijk te slingeren. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Een slingerende aanhanger kan uitbreken. Neem gas terug en vergroot je afstand, zodat je niet in de baan van de aanhanger zit."
+  },
+  {
+   "id": "g40",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Buiten de bebouwde kom fietsen twee fietsers rustig naast elkaar op een vrijliggend fietspad. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 2,
+   "uitleg": "Het fietspad ligt los van de rijbaan en de fietsers rijden voorspelbaar. Er is geen reden om je snelheid aan te passen."
+  },
+  {
+   "id": "g41",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Uitrit",
+   "vraag": "Rechts staat een auto met zijn neus half op de rijbaan bij de uitgang van een parkeerterrein. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Hij staat nog stil maar kan elk moment optrekken. Gas loslaten, remklaar zijn en oogcontact zoeken."
+  },
+  {
+   "id": "g42",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Hulpdiensten",
+   "vraag": "In je spiegel zie je een ambulance met zwaailicht en sirene naderen. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Je moet een voorrangsvoertuig ruimte geven. Neem gas terug en wijk rustig en voorspelbaar uit, zonder abrupt te remmen."
+  },
+  {
+   "id": "g43",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "In de bocht vlak voor je ligt een laag natte bladeren. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Nat blad is bijzonder glad. Rem vóór het gladde stuk af en rijd er zo rechtop mogelijk overheen."
+  },
+  {
+   "id": "g44",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Op een smalle weg komt een brede vrachtwagen je tegemoet die ruim over de as van de weg rijdt. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Er is te weinig ruimte om elkaar op snelheid te passeren. Rem af en wijk zo nodig uit naar de rechterkant."
+  },
+  {
+   "id": "g45",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Bebouwde kom",
+   "vraag": "In de berm rechts ligt een bal stil. Er is niemand te zien en het is een rustige industriestraat. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 2,
+   "uitleg": "De bal beweegt niet en er is geen aanwijzing voor spelende kinderen. Je blijft wel opletten, maar hoeft niets te doen."
+  },
+  {
+   "id": "g46",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Voorrang",
+   "vraag": "Je rijdt op een voorrangsweg. Van rechts nadert een fietser die vaart mindert bij de haaientanden. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Je hebt voorrang, maar hij is nog niet gestopt. Gas loslaten en remklaar blijven tot je zeker weet dat hij je heeft gezien."
+  },
+  {
+   "id": "g47",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Snelweg",
+   "vraag": "Boven de snelweg springen de matrixborden van 100 naar 70 km/u. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een snelheidsverlaging op de matrixborden waarschuwt meestal voor een file of incident verderop. Rem af naar de aangegeven snelheid."
+  },
+  {
+   "id": "g48",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Volgafstand",
+   "vraag": "De auto voor je zet vlak voor een uitrit zijn richtingaanwijzer naar rechts aan. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "Hij gaat afremmen om af te slaan. Neem gas terug en vergroot je afstand zodat je niet hoeft te schrikken van zijn remactie."
+  },
+  {
+   "id": "g49",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Zicht en weer",
+   "vraag": "Na een lange droge periode begint het te regenen op een warme weg. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 1,
+   "uitleg": "De eerste regen mengt zich met olie en rubber en maakt het wegdek extra glad. Neem gas terug en rem en stuur extra rustig."
+  },
+  {
+   "id": "g50",
+   "categorie": "gevaarherkenning",
+   "onderwerp": "Buiten bebouwde kom",
+   "vraag": "Een tegenligger haalt in en rijdt daarbij op jouw weghelft. Wat doe je?",
+   "opties": [
+    "Remmen",
+    "Gas loslaten",
+    "Niets doen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Dit is direct levensgevaarlijk. Rem stevig, wijk uit naar rechts en zorg dat de inhaler ruimte krijgt om terug te voegen."
+  },
+  {
+   "id": "k21",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-b7.svg",
+   "opties": [
+    "Stoppen is verplicht en daarna voorrang verlenen",
+    "Verleen voorrang, stoppen hoeft niet",
+    "Einde voorrangsweg"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord B7: je moet stoppen bij de stopstreep en daarna voorrang verlenen aan het verkeer op de kruisende weg."
+  },
+  {
+   "id": "k22",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-c1.svg",
+   "opties": [
+    "Gesloten in beide richtingen voor voertuigen",
+    "Eenrichtingsweg",
+    "Inhaalverbod"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord C1: de weg is in beide richtingen gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren."
+  },
+  {
+   "id": "k23",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-a1-30.svg",
+   "opties": [
+    "Maximumsnelheid 30 km/u",
+    "Adviessnelheid 30 km/u",
+    "Einde 30 km/u-zone"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een rond bord met rode rand geeft een verbod: hier mag je maximaal 30 km/u rijden. Een adviessnelheid staat op een rechthoekig blauw bord."
+  },
+  {
+   "id": "k24",
+   "categorie": "kennis",
+   "onderwerp": "Snelheid",
+   "vraag": "Welke maximumsnelheid geldt er overdag (tussen 06.00 en 19.00 uur) standaard op de autosnelweg?",
+   "opties": [
+    "100 km/u",
+    "120 km/u",
+    "130 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Overdag geldt op autosnelwegen standaard 100 km/u. Buiten die uren kan er 100, 120 of 130 gelden; de borden zijn altijd leidend."
+  },
+  {
+   "id": "k25",
+   "categorie": "kennis",
+   "onderwerp": "Alcohol",
+   "vraag": "Je hebt je rijbewijs langer dan vijf jaar. Wat is het maximale alcoholpromillage?",
+   "opties": [
+    "0,5 promille",
+    "0,2 promille",
+    "0,8 promille"
+   ],
+   "antwoord": 0,
+   "uitleg": "Voor ervaren bestuurders geldt 0,5 promille. Voor beginnende bestuurders is dat 0,2 promille."
+  },
+  {
+   "id": "k26",
+   "categorie": "kennis",
+   "onderwerp": "Rijbewijs",
+   "vraag": "Hoe lang ben je beginnend bestuurder als je je eerste rijbewijs op je 18e of later haalt?",
+   "opties": [
+    "Vijf jaar",
+    "Twee jaar",
+    "Zeven jaar"
+   ],
+   "antwoord": 0,
+   "uitleg": "De beginnersperiode duurt vijf jaar. Haalde je je eerste rijbewijs op je 17e, dan is het zeven jaar."
+  },
+  {
+   "id": "k27",
+   "categorie": "kennis",
+   "onderwerp": "Rijbewijs",
+   "vraag": "Vanaf welke leeftijd mag je rechtstreeks het onbeperkte rijbewijs A halen?",
+   "opties": [
+    "24 jaar",
+    "21 jaar",
+    "20 jaar"
+   ],
+   "antwoord": 0,
+   "uitleg": "Rechtstreeks A halen mag vanaf 24 jaar. Vanaf 20 jaar kan het ook, maar alleen als je al twee jaar in het bezit bent van A2."
+  },
+  {
+   "id": "k28",
+   "categorie": "kennis",
+   "onderwerp": "Rijbewijs",
+   "vraag": "Wat is de maximale cilinderinhoud van een motor waarop je met rijbewijs A1 mag rijden?",
+   "opties": [
+    "125 cc",
+    "250 cc",
+    "50 cc"
+   ],
+   "antwoord": 0,
+   "uitleg": "Met A1 mag je op een motor van maximaal 125 cc en 11 kW rijden, met een vermogen/gewichtsverhouding van maximaal 0,1 kW/kg."
+  },
+  {
+   "id": "k29",
+   "categorie": "kennis",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Mag je met een A1-motor (125 cc) op de autosnelweg rijden?",
+   "opties": [
+    "Ja, dat mag",
+    "Nee, dat mag niet",
+    "Alleen buiten de spits"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een motorfiets van 125 cc mag op de autosnelweg. Een bromfiets of snorfiets mag daar niet komen."
+  },
+  {
+   "id": "k30",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Welke verzekering is voor je motor wettelijk verplicht?",
+   "opties": [
+    "WA (wettelijke aansprakelijkheid)",
+    "Allrisk",
+    "Geen enkele, verzekeren is vrijwillig"
+   ],
+   "antwoord": 0,
+   "uitleg": "Elk motorvoertuig met kenteken moet minimaal WA-verzekerd zijn, ook als je er niet mee rijdt. Alleen bij een geschorst kenteken mag dat anders."
+  },
+  {
+   "id": "k31",
+   "categorie": "kennis",
+   "onderwerp": "Wegmarkering",
+   "vraag": "Wat betekent een doorgetrokken streep in het midden van de weg?",
+   "opties": [
+    "Je mag de streep niet overschrijden",
+    "Je mag de streep overschrijden om in te halen",
+    "De streep geeft alleen het midden van de weg aan"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een doorgetrokken streep mag je niet overschrijden en ook niet erop rijden. Inhalen kan daar dus niet."
+  },
+  {
+   "id": "k32",
+   "categorie": "kennis",
+   "onderwerp": "Wegmarkering",
+   "vraag": "Wat betekent een gele doorgetrokken streep langs de kant van de weg?",
+   "opties": [
+    "Stilstaan is verboden",
+    "Parkeren is verboden, stilstaan mag",
+    "Hier is een laad- en loszone"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een gele doorgetrokken streep betekent een stilstaanverbod. Een gele onderbroken streep betekent een parkeerverbod."
+  },
+  {
+   "id": "k33",
+   "categorie": "kennis",
+   "onderwerp": "Parkeren",
+   "vraag": "Wat moet je doen als je in een blauwe zone parkeert?",
+   "opties": [
+    "Een parkeerschijf zichtbaar achter het scherm of op de motor plaatsen",
+    "Niets, in een blauwe zone parkeer je gratis en onbeperkt",
+    "Een parkeerkaartje kopen bij de automaat"
+   ],
+   "antwoord": 0,
+   "uitleg": "In een blauwe zone parkeer je gratis, maar wel met een parkeerschijf en binnen de aangegeven maximale parkeerduur."
+  },
+  {
+   "id": "k34",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Je remlicht achter doet het niet. Mag je toch rijden?",
+   "opties": [
+    "Nee, je voertuig moet in goede staat verkeren",
+    "Ja, zolang je voorrem het maar doet",
+    "Ja, maar alleen overdag"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je bent verantwoordelijk voor de technische staat van je motor. Rijden met defecte verlichting is verboden en gevaarlijk."
+  },
+  {
+   "id": "k35",
+   "categorie": "kennis",
+   "onderwerp": "Gedrag",
+   "vraag": "Wanneer mag je claxonneren?",
+   "opties": [
+    "Alleen om een dreigend gevaar af te wenden",
+    "Altijd, om anderen te waarschuwen dat je eraan komt",
+    "Alleen buiten de bebouwde kom"
+   ],
+   "antwoord": 0,
+   "uitleg": "Geluidssignalen mag je alleen gebruiken om dreigend gevaar af te wenden, niet om je ergernis te uiten of iemand te groeten."
+  },
+  {
+   "id": "k36",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Waaraan herken je een autoweg?",
+   "opties": [
+    "Aan een rechthoekig blauw bord met een witte auto",
+    "Aan een rechthoekig blauw bord met een witte snelwegtekening",
+    "Aan een rond blauw bord met een witte auto"
+   ],
+   "antwoord": 0,
+   "uitleg": "Het autowegbord toont een witte personenauto op een blauw vlak. De autosnelweg heeft een bord met een gestileerde weg met twee rijbanen."
+  },
+  {
+   "id": "k37",
+   "categorie": "kennis",
+   "onderwerp": "Snelweg",
+   "vraag": "Mag een bromfiets op de autoweg rijden?",
+   "opties": [
+    "Nee",
+    "Ja, in de rechterrijstrook",
+    "Ja, als hij 45 km/u haalt"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bromfietsen, snorfietsen, fietsers en voetgangers mogen niet op een autoweg of autosnelweg komen."
+  },
+  {
+   "id": "k38",
+   "categorie": "kennis",
+   "onderwerp": "Verlichting",
+   "vraag": "Wanneer moet je in elk geval verlichting voeren?",
+   "opties": [
+    "Van zonsondergang tot zonsopkomst en bij slecht zicht overdag",
+    "Alleen tussen middernacht en zes uur 's ochtends",
+    "Alleen buiten de bebouwde kom"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij duisternis en bij slecht zicht (mist, sneeuw, zware regen) is verlichting verplicht. Op een motor voer je bovendien altijd dimlicht."
+  },
+  {
+   "id": "k39",
+   "categorie": "kennis",
+   "onderwerp": "Snelheid",
+   "vraag": "Wat is de standaard maximumsnelheid binnen de bebouwde kom?",
+   "opties": [
+    "50 km/u",
+    "30 km/u",
+    "60 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Standaard geldt 50 km/u binnen de bebouwde kom. In veel woonwijken staan borden met 30 km/u; die gaan dan voor."
+  },
+  {
+   "id": "k40",
+   "categorie": "kennis",
+   "onderwerp": "Parkeren",
+   "vraag": "Mag je je motor op het trottoir parkeren?",
+   "opties": [
+    "Nee, parkeren op het trottoir is verboden",
+    "Ja, een motor is smal genoeg",
+    "Ja, mits er 1 meter ruimte overblijft"
+   ],
+   "antwoord": 0,
+   "uitleg": "Het trottoir is voor voetgangers. Ook een motor parkeer je op de rijbaan of in een parkeervak."
+  },
+  {
+   "id": "k41",
+   "categorie": "kennis",
+   "onderwerp": "Passagier",
+   "vraag": "Hoeveel personen mag je op een gewone motorfiets vervoeren?",
+   "opties": [
+    "De bestuurder en één passagier, mits er een duozit en voetsteunen zijn",
+    "De bestuurder en twee passagiers",
+    "Alleen de bestuurder"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een passagier mag alleen mee als de motor een duozit en voetsteunen heeft. De passagier draagt ook een goedgekeurde helm."
+  },
+  {
+   "id": "k42",
+   "categorie": "kennis",
+   "onderwerp": "Rijbewijs",
+   "vraag": "Mag je met rijbewijs A2 rijden op een motor die van 50 kW is teruggebracht naar 35 kW?",
+   "opties": [
+    "Ja, mits de begrenzing is goedgekeurd en de motor origineel niet meer dan 70 kW had",
+    "Nee, begrenzen is nooit toegestaan",
+    "Ja, elke motor mag begrensd worden"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een A2-begrenzing mag, maar het originele vermogen mag niet meer dan het dubbele van 35 kW zijn en de begrenzing moet goedgekeurd zijn."
+  },
+  {
+   "id": "k43",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Hoe lang is een rijbewijs voor personen jonger dan 65 jaar in de regel geldig?",
+   "opties": [
+    "10 jaar",
+    "5 jaar",
+    "15 jaar"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een rijbewijs is normaal gesproken tien jaar geldig. Daarna moet je het verlengen, soms met een gezondheidsverklaring."
+  },
+  {
+   "id": "k44",
+   "categorie": "kennis",
+   "onderwerp": "Verkeerslichten",
+   "vraag": "Een verkeerslicht knippert oranje. Wat betekent dat?",
+   "opties": [
+    "Het licht is buiten werking; de gewone voorrangsregels en borden gelden",
+    "Je moet altijd stoppen",
+    "Je mag doorrijden met voorrang"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een knipperend oranje licht betekent dat de installatie buiten werking is. Kijk naar de borden en de gewone voorrangsregels."
+  },
+  {
+   "id": "k45",
+   "categorie": "kennis",
+   "onderwerp": "Verkeerslichten",
+   "vraag": "Het verkeerslicht springt op oranje terwijl je er vlak voor bent. Wat moet je doen?",
+   "opties": [
+    "Doorrijden als stoppen niet meer veilig kan",
+    "Altijd stoppen, ook met een noodstop",
+    "Doorrijden en versnellen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij oranje moet je stoppen, tenzij dat redelijkerwijs niet meer kan. Op een motor is een noodstop op oranje juist gevaarlijk."
+  },
+  {
+   "id": "k46",
+   "categorie": "kennis",
+   "onderwerp": "Wegmarkering",
+   "vraag": "Wat betekenen haaientanden op het wegdek?",
+   "opties": [
+    "Je moet voorrang verlenen aan bestuurders op de kruisende weg",
+    "Je moet stoppen",
+    "Je hebt voorrang"
+   ],
+   "antwoord": 0,
+   "uitleg": "Haaientanden wijzen naar jou toe en betekenen: voorrang verlenen. Stoppen hoeft alleen als de situatie erom vraagt."
+  },
+  {
+   "id": "k47",
+   "categorie": "kennis",
+   "onderwerp": "Parkeren",
+   "vraag": "Op welke afstand van een kruispunt mag je niet parkeren?",
+   "opties": [
+    "Binnen vijf meter",
+    "Binnen twee meter",
+    "Binnen tien meter"
+   ],
+   "antwoord": 0,
+   "uitleg": "Parkeren binnen vijf meter van een kruispunt is verboden, omdat je daarmee het zicht van ander verkeer wegneemt."
+  },
+  {
+   "id": "k48",
+   "categorie": "kennis",
+   "onderwerp": "Parkeren",
+   "vraag": "Waar mag je niet stilstaan?",
+   "opties": [
+    "Op een zebrapad en binnen twaalf meter voor een bushalte",
+    "Alleen op een zebrapad",
+    "Alleen bij een bushalte"
+   ],
+   "antwoord": 0,
+   "uitleg": "Stilstaan mag onder meer niet op een oversteekplaats, op een kruispunt en binnen twaalf meter voor een bushaltebord."
+  },
+  {
+   "id": "k49",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Mag je rijden met een helm zonder ECE-goedkeuringskeurmerk?",
+   "opties": [
+    "Nee, de helm moet goedgekeurd zijn",
+    "Ja, elke helm is toegestaan",
+    "Ja, mits hij goed past"
+   ],
+   "antwoord": 0,
+   "uitleg": "Alleen een goedgekeurde helm met keurmerk voldoet. Een helm zonder keurmerk levert een boete op en beschermt je slechter."
+  },
+  {
+   "id": "k50",
+   "categorie": "kennis",
+   "onderwerp": "Kwetsbare verkeersdeelnemers",
+   "vraag": "Waar rijdt een bromfietser binnen de bebouwde kom in principe?",
+   "opties": [
+    "Op de rijbaan, tenzij een bord het fietspad aanwijst",
+    "Altijd op het fietspad",
+    "Op het trottoir"
+   ],
+   "antwoord": 0,
+   "uitleg": "Binnen de bebouwde kom hoort de bromfietser op de rijbaan, tenzij een bord met bromfietssymbool het fietspad aanwijst."
+  },
+  {
+   "id": "k51",
+   "categorie": "kennis",
+   "onderwerp": "Snelheid",
+   "vraag": "Wat is de maximumsnelheid van een snorfiets?",
+   "opties": [
+    "25 km/u",
+    "45 km/u",
+    "30 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een snorfiets (blauw kentekenplaatje) mag 25 km/u. Een bromfiets (geel plaatje) mag 45 km/u."
+  },
+  {
+   "id": "k52",
+   "categorie": "kennis",
+   "onderwerp": "Borden",
+   "vraag": "Wat betekent dit bord?",
+   "afbeelding": "img/bord-a1-50.svg",
+   "opties": [
+    "Maximumsnelheid 50 km/u",
+    "Einde maximumsnelheid 50 km/u",
+    "Adviessnelheid 50 km/u"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bord A1: vanaf hier geldt een maximumsnelheid van 50 km/u, tot een bord het einde aangeeft of je een andere weg opdraait."
+  },
+  {
+   "id": "k53",
+   "categorie": "kennis",
+   "onderwerp": "Voertuig en documenten",
+   "vraag": "Wat is verplicht aan de achterkant van je motor?",
+   "opties": [
+    "Een geldige, goed leesbare kentekenplaat",
+    "Een kentekenplaat voor én achter",
+    "Niets, een kentekensticker volstaat"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een motorfiets heeft alleen achter een kentekenplaat. Die moet goed leesbaar en onafgedekt zijn."
+  },
+  {
+   "id": "k54",
+   "categorie": "kennis",
+   "onderwerp": "Gedrag",
+   "vraag": "Wat geldt er voor het gebruik van een handsfree headset op de motor?",
+   "opties": [
+    "Dat is toegestaan, zolang je het apparaat niet vasthoudt",
+    "Dat is altijd verboden",
+    "Dat mag alleen buiten de bebouwde kom"
+   ],
+   "antwoord": 0,
+   "uitleg": "Handsfree bellen is toegestaan; het verbod geldt voor het vasthouden van een telefoon of ander elektronisch apparaat."
+  },
+  {
+   "id": "k55",
+   "categorie": "kennis",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Mag je met je motor gebruikmaken van een verplicht fietspad (blauw bord met witte fiets)?",
+   "opties": [
+    "Nee, dat pad is niet voor motorfietsen",
+    "Ja, als je stapvoets rijdt",
+    "Ja, als er geen fietsers zijn"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een verplicht fietspad is bestemd voor fietsers en, waar aangegeven, bromfietsers. Een motorfiets hoort daar niet."
+  },
+  {
+   "id": "i21",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Waarom wordt een motorrijder relatief vaak over het hoofd gezien?",
+   "opties": [
+    "Een motor is smal, valt weg in de dode hoek en zijn snelheid wordt onderschat",
+    "Motoren rijden altijd te hard",
+    "Motorrijders gebruiken geen richtingaanwijzers"
+   ],
+   "antwoord": 0,
+   "uitleg": "Door het smalle silhouet schatten anderen je afstand en snelheid verkeerd in. Val op, kies een zichtbare positie en zoek oogcontact."
+  },
+  {
+   "id": "i22",
+   "categorie": "inzicht",
+   "onderwerp": "Remmen",
+   "vraag": "Je moet vol in de ankers terwijl je in een bocht rijdt. Wat is de juiste volgorde?",
+   "opties": [
+    "Eerst de motor zoveel mogelijk rechtop zetten en dan pas stevig remmen",
+    "Direct vol remmen in de hellingshoek",
+    "Alleen de achterrem gebruiken en de bocht aanhouden"
+   ],
+   "antwoord": 0,
+   "uitleg": "In hellingshoek is de beschikbare grip al voor een groot deel in gebruik voor het sturen. Rechtop zetten geeft je de meeste remkracht."
+  },
+  {
+   "id": "i23",
+   "categorie": "inzicht",
+   "onderwerp": "Passagier",
+   "vraag": "Wat is de invloed van een passagier op je rijgedrag?",
+   "opties": [
+    "Langere remweg, tragere acceleratie en ander stuurgedrag",
+    "Geen enkele, het gewicht valt weg",
+    "De motor remt juist korter door het extra gewicht"
+   ],
+   "antwoord": 0,
+   "uitleg": "Met een passagier neemt het gewicht flink toe. Houd meer afstand, rem eerder en pas eventueel je bandenspanning en veervoorspanning aan."
+  },
+  {
+   "id": "i24",
+   "categorie": "inzicht",
+   "onderwerp": "Remmen",
+   "vraag": "Je achterwiel blokkeert tijdens een noodstop. Wat doe je?",
+   "opties": [
+    "De achterrem iets lossen en de motor rechtop en recht houden",
+    "De achterrem nog harder intrappen",
+    "Direct de koppeling loslaten"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een blokkerend achterwiel kan uitbreken. Laat de druk iets terugkomen zodat het wiel weer rolt en houd de motor recht."
+  },
+  {
+   "id": "i25",
+   "categorie": "inzicht",
+   "onderwerp": "Zicht en weer",
+   "vraag": "Je krijgt te maken met aquaplaning. Wat doe je?",
+   "opties": [
+    "Gas loslaten, motor rechtop houden en niet remmen of sturen tot je weer grip hebt",
+    "Stevig remmen",
+    "Fors bijsturen om de koers te herstellen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij aquaplaning raken je banden het wegdek niet meer. Remmen of sturen werkt dan niet; alleen snelheid laten teruglopen helpt."
+  },
+  {
+   "id": "i26",
+   "categorie": "inzicht",
+   "onderwerp": "Bochttechniek",
+   "vraag": "Waar kijk je in een bocht?",
+   "opties": [
+    "Zo ver mogelijk naar de uitgang van de bocht",
+    "Naar het wegdek vlak voor je voorwiel",
+    "Naar de vangrail aan de buitenkant"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je motor gaat waar je kijkt. Kijk je naar de vangrail, dan stuur je die kant op; kijk daarom naar waar je heen wilt."
+  },
+  {
+   "id": "i27",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Wat is de beste plaats in je rijstrook als je een kruispunt nadert?",
+   "opties": [
+    "Een plek waar je goed zicht hebt en waar je in de spiegels van anderen zichtbaar bent",
+    "Zo dicht mogelijk langs de rechter kantstreep",
+    "Precies op de middenstreep"
+   ],
+   "antwoord": 0,
+   "uitleg": "Kies actief je plaats: goed zicht op de zijwegen en zichtbaar voor het verkeer dat jou voorrang moet verlenen."
+  },
+  {
+   "id": "i28",
+   "categorie": "inzicht",
+   "onderwerp": "Zicht en weer",
+   "vraag": "Waarom is de eerste regen na een droge periode extra gevaarlijk?",
+   "opties": [
+    "Olie en rubberresten komen omhoog en maken het wegdek spekglad",
+    "De banden koelen te snel af",
+    "Het zicht wordt beter waardoor je harder gaat rijden"
+   ],
+   "antwoord": 0,
+   "uitleg": "Vuil dat zich in het wegdek heeft opgehoopt komt met het eerste water los. Daarna spoelt de weg schoon en neemt de grip weer toe."
+  },
+  {
+   "id": "i29",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Je voorband loopt tijdens het rijden plotseling leeg. Wat doe je?",
+   "opties": [
+    "Gas rustig loslaten, het stuur stevig vasthouden en zeer geleidelijk uitrollen",
+    "Hard remmen met de voorrem",
+    "Direct naar de kant sturen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij een klapband voor wordt de motor onrustig. Hard remmen of abrupt sturen maakt het erger; laat de snelheid rustig teruglopen."
+  },
+  {
+   "id": "i30",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Wat moet je weten over koude banden?",
+   "opties": [
+    "Koude banden geven minder grip; rijd de eerste kilometers rustiger",
+    "Koude banden geven juist meer grip",
+    "De temperatuur van banden maakt niets uit"
+   ],
+   "antwoord": 0,
+   "uitleg": "Motorbanden werken pas goed op temperatuur. De eerste kilometers, en bij koud weer sowieso, heb je duidelijk minder grip."
+  },
+  {
+   "id": "i31",
+   "categorie": "inzicht",
+   "onderwerp": "Volgafstand",
+   "vraag": "Hoeveel volgafstand houd je aan op een nat wegdek?",
+   "opties": [
+    "Ongeveer het dubbele: vier seconden",
+    "Dezelfde twee seconden",
+    "Eén seconde is genoeg omdat je motor licht is"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij regen is je remweg fors langer. Verdubbel de tweesecondenregel naar ongeveer vier seconden."
+  },
+  {
+   "id": "i32",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Waarom vermijd je wegmarkeringen en putdeksels in een bocht?",
+   "opties": [
+    "Ze zijn gladder dan asfalt, zeker als ze nat zijn",
+    "Ze beschadigen je banden",
+    "Het is wettelijk verboden erop te rijden"
+   ],
+   "antwoord": 0,
+   "uitleg": "Verf en metaal bieden veel minder grip dan asfalt. In hellingshoek kan dat direct tot wegglijden leiden."
+  },
+  {
+   "id": "i33",
+   "categorie": "inzicht",
+   "onderwerp": "Gedrag",
+   "vraag": "Wat houdt defensief rijden in?",
+   "opties": [
+    "Anticiperen op fouten van anderen en marge inbouwen",
+    "Zo langzaam mogelijk rijden",
+    "Altijd je voorrang opeisen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Defensief rijden betekent dat je rekening houdt met wat anderen fout kunnen doen en je snelheid en positie daarop aanpast."
+  },
+  {
+   "id": "i34",
+   "categorie": "inzicht",
+   "onderwerp": "Gedrag",
+   "vraag": "Je maakt een lange rit van vier uur. Wat is verstandig?",
+   "opties": [
+    "Minstens elke twee uur een pauze nemen",
+    "Doorrijden zolang je je goed voelt",
+    "Alleen pauzeren om te tanken"
+   ],
+   "antwoord": 0,
+   "uitleg": "Vermoeidheid verlengt je reactietijd en vermindert je concentratie. Op een motor kost rijden bovendien meer energie dan in een auto."
+  },
+  {
+   "id": "i35",
+   "categorie": "inzicht",
+   "onderwerp": "Alcohol",
+   "vraag": "Je krijgt medicijnen met een gele waarschuwingssticker. Wat betekent dat?",
+   "opties": [
+    "Het middel kan je rijvaardigheid beïnvloeden; overleg met arts of apotheker",
+    "Het middel is alleen op recept verkrijgbaar",
+    "Je mag er nooit meer mee rijden"
+   ],
+   "antwoord": 0,
+   "uitleg": "Een gele sticker waarschuwt voor invloed op je rijvaardigheid. Vraag advies; bij een rode sticker mag je helemaal niet rijden."
+  },
+  {
+   "id": "i36",
+   "categorie": "inzicht",
+   "onderwerp": "Alcohol",
+   "vraag": "Wat is het effect van alcohol op je rijgedrag?",
+   "opties": [
+    "Tragere reactie, slechter inschattingsvermogen en meer risicogedrag",
+    "Alleen een langere reactietijd, verder verandert er niets",
+    "Je rijdt rustiger en dus veiliger"
+   ],
+   "antwoord": 0,
+   "uitleg": "Alcohol vertraagt je reacties, verkleint je gezichtsveld en zorgt ervoor dat je je eigen kunnen overschat. Juist op een motor is dat fataal."
+  },
+  {
+   "id": "i37",
+   "categorie": "inzicht",
+   "onderwerp": "Inhalen",
+   "vraag": "Waar moet je op letten als je een vrachtwagen inhaalt?",
+   "opties": [
+    "Op luchtverplaatsing en zijwind bij het passeren; houd extra afstand en snelheid",
+    "Op niets bijzonders, een motor is licht genoeg",
+    "Je moet zo dicht mogelijk langs de vrachtwagen rijden"
+   ],
+   "antwoord": 0,
+   "uitleg": "Langs een vrachtwagen ontstaan wervelingen die je motor kunnen verplaatsen. Haal vlot en met ruimte in, en verwacht een windstoot bij het uitkomen."
+  },
+  {
+   "id": "i38",
+   "categorie": "inzicht",
+   "onderwerp": "Bagage",
+   "vraag": "Je rijdt volgeladen met bagage en een passagier. Wat pas je aan?",
+   "opties": [
+    "De bandenspanning en zo mogelijk de veervoorspanning",
+    "Niets, de motor stelt zich vanzelf in",
+    "Alleen de spiegelstand"
+   ],
+   "antwoord": 0,
+   "uitleg": "Meer gewicht vraagt om een hogere bandenspanning en een strakkere veervoorspanning. Raadpleeg het instructieboekje van je motor."
+  },
+  {
+   "id": "i39",
+   "categorie": "inzicht",
+   "onderwerp": "Bochttechniek",
+   "vraag": "Wanneer schakel je terug voor een bocht?",
+   "opties": [
+    "Vóór de bocht, zodat je er met constant gas doorheen kunt",
+    "Middenin de bocht",
+    "Pas na de bocht"
+   ],
+   "antwoord": 0,
+   "uitleg": "Remmen en schakelen doe je vóór de bocht. Met een klein beetje gas blijft de motor stabiel; schakelen in de bocht verstoort de balans."
+  },
+  {
+   "id": "i40",
+   "categorie": "inzicht",
+   "onderwerp": "Remmen",
+   "vraag": "Hoe rem je op een losse ondergrond zoals grind of zand?",
+   "opties": [
+    "Rustig en met relatief meer achterrem, motor rechtop houden",
+    "Vol in de voorrem",
+    "Alleen op de motor afremmen, zonder remmen te gebruiken"
+   ],
+   "antwoord": 0,
+   "uitleg": "Op los materiaal blokkeert het voorwiel snel en dan val je meteen. Rem gedoseerd, met meer nadruk op de achterrem en de motor rechtop."
+  },
+  {
+   "id": "i41",
+   "categorie": "inzicht",
+   "onderwerp": "Pech en ongeval",
+   "vraag": "Je krijgt pech op de autosnelweg. Wat doe je?",
+   "opties": [
+    "Naar de vluchtstrook, motor en jezelf achter de vangrail, en hulp inschakelen",
+    "Op de rijstrook blijven staan met alarmlichten",
+    "Je motor midden op de vluchtstrook laten en ernaast blijven wachten"
+   ],
+   "antwoord": 0,
+   "uitleg": "Ga zo ver mogelijk rechts, zet je alarmlichten aan en wacht achter de vangrail. Blijf nooit naast je voertuig op de vluchtstrook staan."
+  },
+  {
+   "id": "i42",
+   "categorie": "inzicht",
+   "onderwerp": "Pech en ongeval",
+   "vraag": "Je komt als eerste bij een ongeval. Wat doe je als eerste?",
+   "opties": [
+    "De plek veilig maken en 112 bellen",
+    "Direct de helm van het slachtoffer afhalen",
+    "Het slachtoffer meteen verplaatsen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Zorg eerst voor je eigen veiligheid en die van anderen, waarschuw 112 en verplaats een slachtoffer alleen bij direct gevaar."
+  },
+  {
+   "id": "i43",
+   "categorie": "inzicht",
+   "onderwerp": "Milieu",
+   "vraag": "Wat is een kenmerk van zuinig en milieubewust rijden?",
+   "opties": [
+    "Vroeg opschakelen en een gelijkmatige snelheid aanhouden",
+    "Zo lang mogelijk in een lage versnelling rijden",
+    "Vaak hard optrekken en weer afremmen"
+   ],
+   "antwoord": 0,
+   "uitleg": "Vroeg opschakelen, rustig anticiperen en een constante snelheid verlagen je verbruik en uitstoot, en zijn bovendien veiliger."
+  },
+  {
+   "id": "i44",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Waarom controleer je regelmatig je ketting?",
+   "opties": [
+    "Een te losse of droge ketting kan eraf lopen of het achterwiel blokkeren",
+    "Een strakke ketting rijdt zuiniger",
+    "De ketting heeft geen invloed op de veiligheid"
+   ],
+   "antwoord": 0,
+   "uitleg": "Spanning en smering van de ketting zijn veiligheidszaken: bij een afgelopen ketting kan het achterwiel plotseling blokkeren."
+  },
+  {
+   "id": "i45",
+   "categorie": "inzicht",
+   "onderwerp": "Hulpdiensten",
+   "vraag": "Een voorrangsvoertuig met zwaailicht en sirene nadert. Wat doe je?",
+   "opties": [
+    "Rustig ruimte maken, zonder abrupt te remmen of gevaarlijk uit te wijken",
+    "Direct vol op de rem en stoppen waar je bent",
+    "Doorrijden, want een motor is klein genoeg"
+   ],
+   "antwoord": 0,
+   "uitleg": "Je moet een voorrangsvoertuig voor laten gaan, maar wel op een veilige manier. Kijk waar je heen kunt en beweeg voorspelbaar."
+  },
+  {
+   "id": "i46",
+   "categorie": "inzicht",
+   "onderwerp": "Motorspecifiek",
+   "vraag": "Hoe rijd je het veiligst met een groep motorrijders?",
+   "opties": [
+    "Versprongen achter elkaar, elk met voldoende eigen remruimte",
+    "Precies naast elkaar in één rijstrook",
+    "Zo dicht mogelijk op elkaar zodat de groep bij elkaar blijft"
+   ],
+   "antwoord": 0,
+   "uitleg": "In versprongen formatie zie je verder vooruit en houdt iedereen zijn eigen remruimte. Naast elkaar rijden is niet toegestaan en gevaarlijk."
+  },
+  {
+   "id": "i47",
+   "categorie": "inzicht",
+   "onderwerp": "Gedrag",
+   "vraag": "Wat gebeurt er met je gezichtsveld als je snelheid toeneemt?",
+   "opties": [
+    "Het wordt smaller, waardoor je gevaar aan de zijkant later ziet",
+    "Het wordt breder",
+    "Het verandert niet"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij hoge snelheid richt je blik zich verder vooruit en versmalt je gezichtsveld (tunnelvisie). Daardoor mis je eerder iets van opzij."
+  },
+  {
+   "id": "i48",
+   "categorie": "inzicht",
+   "onderwerp": "Motortechniek",
+   "vraag": "Wanneer controleer je de bandenspanning van je motor?",
+   "opties": [
+    "Bij koude banden, minstens elke twee weken",
+    "Na een lange rit als de banden warm zijn",
+    "Alleen bij de jaarlijkse beurt"
+   ],
+   "antwoord": 0,
+   "uitleg": "Warme banden geven een te hoge meetwaarde. Controleer koud en regelmatig; motorbanden verliezen sneller druk dan je denkt."
+  },
+  {
+   "id": "i49",
+   "categorie": "inzicht",
+   "onderwerp": "Voorrang",
+   "vraag": "Je wilt linksaf slaan op een kruispunt zonder verkeerslichten. Wie moet je voor laten gaan?",
+   "opties": [
+    "Alle tegenliggers die rechtdoor gaan of rechtsaf slaan",
+    "Alleen tegenliggers die ook linksaf slaan",
+    "Niemand, want jij bent aan de beurt"
+   ],
+   "antwoord": 0,
+   "uitleg": "Bij linksaf slaan moet je het tegemoetkomende verkeer dat jouw pad kruist voor laten gaan, en ook fietsers en voetgangers in de zijstraat."
+  },
+  {
+   "id": "i50",
+   "categorie": "inzicht",
+   "onderwerp": "Parkeren",
+   "vraag": "Je zet je motor op een aflopende weg neer. Waar let je op?",
+   "opties": [
+    "Stevige ondergrond onder de standaard en de motor in de versnelling zetten",
+    "De motor in de vrijstand laten staan",
+    "De motor met het achterwiel richting de helling zetten"
+   ],
+   "antwoord": 0,
+   "uitleg": "In de versnelling kan de motor niet wegrollen. Let ook op een zachte of hete ondergrond waar de standaard in kan wegzakken."
+  }
+ ],
+ "deelexamens": [
+  {
+   "categorie": "gevaarherkenning",
+   "aantalVragen": 25,
+   "tijdMinuten": 12,
+   "slaagnorm": 21
+  },
+  {
+   "categorie": "kennis",
+   "aantalVragen": 25,
+   "tijdMinuten": 15,
+   "slaagnorm": 21
+  },
+  {
+   "categorie": "inzicht",
+   "aantalVragen": 25,
+   "tijdMinuten": 15,
+   "slaagnorm": 21
+  }
+ ]
 }
