@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord J1 gevaarlijke bocht naar rechts</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<polygon points="100,22 182,166 18,166" fill="#fff" stroke="#111" stroke-width="2"/>
+<polygon points="100,22 182,166 18,166" fill="none" stroke="#d0021b" stroke-width="16"/>
+<path d="M88 148 L88 110 Q88 88 112 88" fill="none" stroke="#111" stroke-width="11" stroke-linecap="square"/>
+<polygon points="106,74 130,88 106,102" fill="#111"/></svg>

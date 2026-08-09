@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord C11 gesloten voor motorfietsen</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<circle cx="100" cy="100" r="82" fill="#fff" stroke="#111" stroke-width="2"/>
+<circle cx="100" cy="100" r="72" fill="none" stroke="#d0021b" stroke-width="18"/>
+<g fill="#111">
+  <circle cx="68" cy="126" r="17" fill="none" stroke="#111" stroke-width="7"/>
+  <circle cx="134" cy="126" r="17" fill="none" stroke="#111" stroke-width="7"/>
+  <path d="M60 118 L92 96 L120 96 L138 120" fill="none" stroke="#111" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M92 96 L104 76 L124 76" fill="none" stroke="#111" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="104" cy="72" r="11"/>
+</g></svg>

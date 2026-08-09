@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord A1 maximumsnelheid 30</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<circle cx="100" cy="100" r="82" fill="#fff" stroke="#111" stroke-width="2"/>
+<circle cx="100" cy="100" r="72" fill="none" stroke="#d0021b" stroke-width="20"/>
+<text x="100" y="126" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="bold"
+  fill="#111" text-anchor="middle">30</text></svg>

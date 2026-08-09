@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord G5 erf (woonerf)</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<rect x="24" y="24" width="152" height="152" fill="#0b57a4" stroke="#fff" stroke-width="6"/>
+<g fill="#fff">
+  <path d="M52 120 L78 96 L104 120 Z"/>
+  <rect x="62" y="118" width="32" height="30"/>
+  <circle cx="128" cy="104" r="9"/>
+  <rect x="122" y="116" width="13" height="30" rx="5"/>
+  <circle cx="150" cy="112" r="7"/>
+  <rect x="145" y="122" width="10" height="24" rx="4"/>
+</g></svg>

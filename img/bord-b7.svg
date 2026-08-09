@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord B7 stop</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<polygon points="60,22 140,22 178,60 178,140 140,178 60,178 22,140 22,60"
+  fill="#d0021b" stroke="#fff" stroke-width="6"/>
+<text x="100" y="118" font-family="Arial,Helvetica,sans-serif" font-size="46" font-weight="bold"
+  fill="#fff" text-anchor="middle">STOP</text></svg>

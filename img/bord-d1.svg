@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord D1 rotonde, verplichte rijrichting</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<circle cx="100" cy="100" r="82" fill="#0b57a4" stroke="#fff" stroke-width="6"/>
+<g fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round">
+  <path d="M100 46 A54 54 0 0 1 147 73"/>
+  <path d="M147 127 A54 54 0 0 1 100 154"/>
+  <path d="M53 73 A54 54 0 0 1 53 127" />
+</g>
+<g fill="#fff">
+  <polygon points="150,60 162,80 138,80"/>
+  <polygon points="92,158 112,146 112,170"/>
+  <polygon points="50,142 38,122 62,122"/>
+</g></svg>

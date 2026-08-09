@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" >
+<title>Bord B1 voorrangsweg</title>
+<rect width="200" height="200" fill="#eef2f7"/>
+<g transform="translate(100,100)">
+  <rect x="-62" y="-62" width="124" height="124" transform="rotate(45)" fill="#fff" stroke="#111" stroke-width="3"/>
+  <rect x="-44" y="-44" width="88" height="88" transform="rotate(45)" fill="#f5c400"/>
+</g></svg>

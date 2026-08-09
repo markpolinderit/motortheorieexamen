@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" ><rect width="360" height="240" fill="#e8efe6"/>
+<title>Fietser rechts naast je terwijl je rechtsaf wilt</title>
+<rect x="0" y="70" width="360" height="110" fill="#8d8d8d"/>
+<rect x="0" y="150" width="360" height="30" fill="#c0392b" opacity=".6"/>
+<rect x="230" y="150" width="90" height="90" fill="#8d8d8d"/>
+<line x1="0" y1="112" x2="360" y2="112" stroke="#fff" stroke-width="4" stroke-dasharray="16 14"/>
+<g transform="translate(150,130) rotate(90)"><rect x="-13" y="-9" width="26" height="18" rx="7" fill="#222"/><circle cx="0" cy="-14" r="7" fill="#f5c400"/><circle cx="-13" cy="12" r="4" fill="#333"/><circle cx="13" cy="12" r="4" fill="#333"/></g>
+<g transform="translate(150,166) scale(1)"><circle cx="-14" cy="10" r="9" fill="none" stroke="#333" stroke-width="3"/><circle cx="14" cy="10" r="9" fill="none" stroke="#333" stroke-width="3"/><path d="M-14 10 L0 -4 L14 10" fill="none" stroke="#1c7ed6" stroke-width="4"/><path d="M0 -4 L4 -16" stroke="#1c7ed6" stroke-width="4"/><circle cx="4" cy="-22" r="6" fill="#444"/></g>
+<text x="150" y="60" font-family="Arial" font-size="13" fill="#111" text-anchor="middle">jij wilt rechtsaf</text>
+</svg>
